@@ -2,7 +2,7 @@
 
 My personal portfolio — a fast, bilingual single-page site built from scratch with vanilla HTML, CSS and JavaScript. No frameworks, no build step.
 
-🔗 **Live:** https://daniilbarilotti.github.io/portfolio/
+🔗 **Live:** [Portfolio](https://daniilbarilotti.github.io)
 
 ## Features
 
