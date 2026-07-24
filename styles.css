@@ -179,3 +179,56 @@ footer{padding:40px 20px;text-align:center;color:var(--muted);font-size:13px;fon
 @media(max-width:680px){.car-btn{display:none}}
 .car-hint{text-align:center;margin-top:6px;font-family:"Space Mono",monospace;font-size:12px;color:var(--muted)}
 @media(min-width:681px){.car-hint{display:none}}
+
+/* proj-links — два посилання на картці */
+.proj-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.proj-link {
+  font-family: "Space Mono", monospace;
+  font-size: 12px;
+  color: var(--accent-1);
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  transition: border-color .2s ease, color .2s ease;
+}
+
+.proj-link:hover {
+  border-color: var(--accent-1);
+  color: var(--text);
+}
+
+.proj-link.repo {
+  color: var(--muted);
+}
+
+.proj-link.repo:hover {
+  color: var(--text);
+  border-color: var(--muted);
+}
+
+.course-card--accent {
+  border-color: var(--accent-1);
+  background: var(--surface);
+  position: relative;
+  overflow: hidden;
+}
+
+.course-card--accent::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--grad);
+}
+
+.course-card--accent h3 {
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

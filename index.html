@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title data-i18n="meta.title">Daniil Barilotti — Portfolio</title>
-<meta name="description" content="Cybersecurity student & developer · portfolio" />
+<meta name="description" content="Cybersecurity student & frontend developer · portfolio" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
@@ -18,14 +18,16 @@
     <div class="logo" id="logo">D<span>.</span></div>
     <div class="nav-right">
       <div class="nav-links">
-        <a href="#about" data-i18n="nav.about">About</a>
-        <a href="#skills" data-i18n="nav.skills">Skills</a>
-        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#about"      data-i18n="nav.about">About</a>
+        <a href="#skills"     data-i18n="nav.skills">Skills</a>
+        <a href="#projects"   data-i18n="nav.projects">Projects</a>
         <a href="#coursework" data-i18n="nav.coursework">Coursework</a>
-        <a href="#languages" data-i18n="nav.languages">Languages</a>
-        <a href="#contacts" data-i18n="nav.contacts">Contact</a>
+        <a href="#languages"  data-i18n="nav.languages">Languages</a>
+        <a href="#contacts"   data-i18n="nav.contacts">Contact</a>
       </div>
-      <button class="palette-btn" id="paletteBtn" aria-label="Change colors" title="Change colors"><span class="swatch"></span></button>
+      <button class="palette-btn" id="paletteBtn" aria-label="Change colors" title="Change colors">
+        <span class="swatch"></span>
+      </button>
       <div class="lang-toggle" id="langToggle">
         <button data-lang="en" class="active">EN</button>
         <button data-lang="de">DE</button>
@@ -36,9 +38,13 @@
   <!-- HERO -->
   <section class="hero" id="top">
     <div class="hero-orb"></div>
-    <div class="avatar anim a1"><img src="https://avatars.githubusercontent.com/u/121811622?v=4" alt="Daniil Barilotti" /></div>
+    <div class="avatar anim a1">
+      <img src="https://avatars.githubusercontent.com/u/121811622?v=4" alt="Daniil Barilotti" />
+    </div>
     <h1 class="anim a2">Daniil Barilotti <span class="grad">.</span></h1>
-    <p class="tagline anim a3" data-i18n="hero.tagline">I build products that are secure at the core and a pleasure to use.</p>
+    <p class="tagline anim a3" data-i18n="hero.tagline">
+      I build products that are secure at the core and a pleasure to use.
+    </p>
     <div class="scroll-hint"><span>SCROLL</span><span class="line"></span></div>
   </section>
 
@@ -48,13 +54,19 @@
       <div>
         <div class="eyebrow reveal" data-i18n="about.eyebrow">01 — About</div>
         <h2 class="sec-title reveal d1" data-i18n="about.title">Who I am & where I study.</h2>
-        <p class="lead-p reveal d1" data-i18n="about.text">I like understanding how things work from the inside — from cryptography and networks to interface motion. In my free time I build games, tools and edit video content.</p>
+        <p class="lead-p reveal d1" data-i18n="about.text">
+          I like understanding how things work from the inside — from cryptography and networks to interface motion.
+          In my free time I build games, tools and edit video content.
+        </p>
       </div>
       <div>
+        <!-- University -->
         <div class="edu-card reveal d1">
           <h3>V. N. Karazin National University</h3>
-          <div class="role" data-i18n="edu.role">Cybersecurity · 3rd year</div>
-          <div class="meta" data-i18n="edu.meta">Cryptography, networking, information security. Based in Germany.</div>
+          <div class="role" data-i18n="edu.role">Cybersecurity · 4th year</div>
+          <div class="meta" data-i18n="edu.meta">
+            Cryptography, networking, information security. Based in Germany.
+          </div>
         </div>
       </div>
     </div>
@@ -66,10 +78,10 @@
       <div class="eyebrow reveal" data-i18n="skills.eyebrow">02 — Skills</div>
       <h2 class="sec-title reveal d1" data-i18n="skills.title">What I work with.</h2>
       <div class="tabs reveal d1" id="tabs">
-        <button class="tab active" data-cat="all" data-i18n="skills.all">All</button>
-        <button class="tab" data-cat="front" data-i18n="skills.front">Frontend</button>
-        <button class="tab" data-cat="sec" data-i18n="skills.sec">Security</button>
-        <button class="tab" data-cat="tools" data-i18n="skills.tools">Tools</button>
+        <button class="tab active" data-cat="all"   data-i18n="skills.all">All</button>
+        <button class="tab"        data-cat="front"  data-i18n="skills.front">Frontend</button>
+        <button class="tab"        data-cat="sec"    data-i18n="skills.sec">Security</button>
+        <button class="tab"        data-cat="tools"  data-i18n="skills.tools">Tools</button>
       </div>
       <div class="chips reveal d1" id="chips">
         <span class="chip" data-cat="front">JavaScript</span>
@@ -81,6 +93,8 @@
         <span class="chip" data-cat="front">Responsive design</span>
         <span class="chip" data-cat="front">REST API</span>
         <span class="chip" data-cat="front">UI &amp; animation</span>
+        <span class="chip" data-cat="front">axios</span>
+        <span class="chip" data-cat="front">react-markdown</span>
         <span class="chip" data-cat="sec">Python</span>
         <span class="chip" data-cat="sec">Cryptography (RSA / ECC)</span>
         <span class="chip" data-cat="sec">Networking (OSI / TCP-IP)</span>
@@ -88,11 +102,12 @@
         <span class="chip" data-cat="sec">Linux</span>
         <span class="chip" data-cat="sec">Wireshark</span>
         <span class="chip" data-cat="sec">Hashing &amp; PKI</span>
+        <span class="chip" data-cat="sec">Prompt injection / LLM security</span>
         <span class="chip" data-cat="tools">Git</span>
         <span class="chip" data-cat="tools">Docker</span>
         <span class="chip" data-cat="tools">Vite</span>
         <span class="chip" data-cat="tools">Webpack</span>
-        <span class="chip" data-cat="tools">npm</span>
+        <span class="chip" data-cat="tools">npm / yarn</span>
         <span class="chip" data-cat="tools">Bash</span>
         <span class="chip" data-cat="tools">Figma</span>
         <span class="chip" data-cat="tools">VS Code</span>
@@ -112,7 +127,9 @@
       </div>
       <div class="car-hint" data-i18n="proj.swipe">← swipe →</div>
       <div class="center reveal d1" style="margin-top:32px">
-        <a class="btn ghost" href="https://github.com/DaniilBarilotti" target="_blank" rel="noopener" data-i18n="projects.all">View all on GitHub</a>
+        <a class="btn ghost" href="https://github.com/DaniilBarilotti" target="_blank" rel="noopener" data-i18n="projects.all">
+          View all on GitHub
+        </a>
       </div>
     </div>
   </section>
@@ -120,13 +137,15 @@
   <!-- COURSEWORK -->
   <section class="alt" id="coursework">
     <div class="wrap">
-      <div class="eyebrow reveal" data-i18n="course.eyebrow">04 — University coursework</div>
-      <h2 class="sec-title reveal d1" data-i18n="course.title">Academic work.</h2>
-      <p class="lead-p reveal d1" data-i18n="course.intro">A selection of term papers and practical assignments from my degree.</p>
+      <div class="eyebrow reveal" data-i18n="course.eyebrow">04 — Education & Coursework</div>
+      <h2 class="sec-title reveal d1" data-i18n="course.title">Academic & professional training.</h2>
+      <p class="lead-p reveal d1" data-i18n="course.intro">University coursework and completed courses.</p>
       <div class="course-grid reveal d1">
         <div class="course-card">
           <h3 data-i18n="course.c1.t">Cryptography</h3>
-          <p data-i18n="course.c1.d">Complexity analysis of DSA, RSA and elliptic-curve algorithms; discrete logarithm on elliptic curves.</p>
+          <p data-i18n="course.c1.d">
+            Complexity analysis of DSA, RSA and elliptic-curve algorithms; discrete logarithm on elliptic curves.
+          </p>
         </div>
         <div class="course-card">
           <h3 data-i18n="course.c2.t">Computer networks</h3>
@@ -135,6 +154,13 @@
         <div class="course-card">
           <h3 data-i18n="course.c3.t">Information transmission theory</h3>
           <p data-i18n="course.c3.d">Signal distance metrics, multichannel systems and error analysis.</p>
+        </div>
+        <div class="course-card course-card--accent">
+          <h3 data-i18n="course.c4.t">Mate Academy — Frontend</h3>
+          <p data-i18n="course.c4.d">
+            Completed the Front-end developer profession: 334+ hands-on tasks covering
+            HTML, CSS, JavaScript, TypeScript, React and Redux. Issued Jan 10, 2026.
+          </p>
         </div>
       </div>
     </div>
@@ -146,10 +172,18 @@
       <div class="eyebrow reveal" data-i18n="lang.eyebrow">05 — Languages</div>
       <h2 class="sec-title reveal d1" data-i18n="lang.title">Languages I speak.</h2>
       <div class="lang-grid reveal d1">
-        <div class="lang-card"><span class="lang-name" data-i18n="lang.ru">Russian</span><span class="lang-lvl" data-i18n="lang.native">Native</span></div>
-        <div class="lang-card"><span class="lang-name" data-i18n="lang.uk">Ukrainian</span><span class="lang-lvl" data-i18n="lang.native">Native</span></div>
-        <div class="lang-card"><span class="lang-name" data-i18n="lang.en">English</span><span class="lang-lvl">B2</span></div>
-        <div class="lang-card"><span class="lang-name" data-i18n="lang.de">German</span><span class="lang-lvl">B1</span></div>
+        <div class="lang-card">
+          <span class="lang-name" data-i18n="lang.uk">Ukrainian</span>
+          <span class="lang-lvl"  data-i18n="lang.native">Native</span>
+        </div>
+        <div class="lang-card">
+          <span class="lang-name" data-i18n="lang.en">English</span>
+          <span class="lang-lvl">B2</span>
+        </div>
+        <div class="lang-card">
+          <span class="lang-name" data-i18n="lang.de">German</span>
+          <span class="lang-lvl">B1</span>
+        </div>
       </div>
     </div>
   </section>
@@ -168,14 +202,18 @@
       <div class="head center reveal">
         <div class="eyebrow" data-i18n="game.eyebrow">07 — Mini-game</div>
         <h2 class="sec-title" data-i18n="game.title">Access code</h2>
-        <p class="sub" data-i18n="game.sub">Repeat the sequence of flashes. Each level the code grows. Can you reach 10?</p>
+        <p class="sub" data-i18n="game.sub">
+          Repeat the sequence of flashes. Each level the code grows. Can you reach 10?
+        </p>
       </div>
       <div class="pad reveal d1">
-        <div class="tile" data-k="0"></div><div class="tile" data-k="1"></div>
-        <div class="tile" data-k="2"></div><div class="tile" data-k="3"></div>
+        <div class="tile" data-k="0"></div>
+        <div class="tile" data-k="1"></div>
+        <div class="tile" data-k="2"></div>
+        <div class="tile" data-k="3"></div>
       </div>
       <div class="game-ui reveal d1">
-        <div class="status" id="status" data-i18n="game.idle">Press “Start” to break into the system.</div>
+        <div class="status" id="status" data-i18n="game.idle">Press "Start" to break into the system.</div>
         <button class="btn" id="start" data-i18n="game.start">Start</button>
       </div>
     </div>
@@ -185,12 +223,18 @@
   <section class="contacts" id="contacts">
     <div class="wrap">
       <div class="eyebrow reveal center" data-i18n="contacts.eyebrow">08 — Contact</div>
-      <h2 class="reveal d1" data-i18n="contacts.title">Let’s connect</h2>
+      <h2 class="reveal d1" data-i18n="contacts.title">Let's connect</h2>
       <p class="ld reveal d1" data-i18n="contacts.lead">Open to projects, internships and good conversations.</p>
       <div class="links reveal d2">
-        <a class="link-card" href="mailto:daniilbarilotti@gmail.com"><span class="dot"></span><span data-i18n="contacts.email">Email</span></a>
-        <a class="link-card" href="https://t.me/rilotti" target="_blank" rel="noopener"><span class="dot"></span>Telegram</a>
-        <a class="link-card" href="https://github.com/DaniilBarilotti" target="_blank" rel="noopener"><span class="dot"></span>GitHub</a>
+        <a class="link-card" href="mailto:daniilbarilotti@gmail.com">
+          <span class="dot"></span><span data-i18n="contacts.email">Email</span>
+        </a>
+        <a class="link-card" href="https://t.me/rilotti" target="_blank" rel="noopener">
+          <span class="dot"></span>Telegram
+        </a>
+        <a class="link-card" href="https://github.com/DaniilBarilotti" target="_blank" rel="noopener">
+          <span class="dot"></span>GitHub
+        </a>
       </div>
     </div>
   </section>

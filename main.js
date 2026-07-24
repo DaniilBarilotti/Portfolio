@@ -15,9 +15,9 @@
       "hero.tagline":      "I build products that are secure at the core and a pleasure to use.",
       "about.eyebrow":     "01 — About",
       "about.title":       "Who I am & where I study.",
-      "about.text":        "I like understanding how things work from the inside — from cryptography and networks to interface motion. In my free time I build games, tools and edit video content.",
+      "about.text":        "I like understanding how things work from the inside — from cryptography and networks to interface motion. In my free time I build games, tools, work with cryptocurrencies and edit video content.",
       "edu.role":          "Cybersecurity · 4th year",
-      "edu.meta":          "Cryptography, networking, information security. Based in Germany.",
+      "edu.meta":          "Cryptography, networking, information security.",
       "skills.eyebrow":    "02 — Skills",
       "skills.title":      "What I work with.",
       "skills.all":        "All",
@@ -27,21 +27,23 @@
       "projects.eyebrow":  "03 — Projects",
       "projects.title":    "Things I built.",
       "projects.all":      "View all on GitHub",
-      "proj.view":         "View repo →",
+      "proj.view":         "Repo →",
+      "proj.live":         "Live →",
       "proj.swipe":        "← swipe →",
-      "course.eyebrow":    "04 — University coursework",
-      "course.title":      "Academic work.",
-      "course.intro":      "A selection of term papers and practical assignments from my degree.",
+      "course.eyebrow":    "04 — Education & Coursework",
+      "course.title":      "Academic & professional training.",
+      "course.intro":      "University coursework and completed courses.",
       "course.c1.t":       "Cryptography",
       "course.c1.d":       "Complexity analysis of DSA, RSA and elliptic-curve algorithms; discrete logarithm on elliptic curves.",
       "course.c2.t":       "Computer networks",
       "course.c2.d":       "OSI model, IP subnetting, TCP/UDP, NAT and routing.",
       "course.c3.t":       "Information transmission theory",
       "course.c3.d":       "Signal distance metrics, multichannel systems and error analysis.",
+      "course.c4.t":       "Mate Academy — Frontend",
+      "course.c4.d":       "Completed the Front-end developer profession: 334+ hands-on tasks covering HTML, CSS, JavaScript, TypeScript, React and Redux. Issued Jan 10, 2026.",
       "lang.eyebrow":      "05 — Languages",
       "lang.title":        "Languages I speak.",
       "lang.native":       "Native",
-      "lang.ru":           "Russian",
       "lang.uk":           "Ukrainian",
       "lang.en":           "English",
       "lang.de":           "German",
@@ -72,15 +74,15 @@
       "nav.about":         "Über mich",
       "nav.skills":        "Skills",
       "nav.projects":      "Projekte",
-      "nav.coursework":    "Studienarbeiten",
+      "nav.coursework":    "Ausbildung",
       "nav.languages":     "Sprachen",
       "nav.contacts":      "Kontakt",
       "hero.tagline":      "Ich baue Produkte, die im Kern sicher und angenehm zu benutzen sind.",
       "about.eyebrow":     "01 — Über mich",
       "about.title":       "Wer ich bin & wo ich studiere.",
-      "about.text":        "Ich verstehe gern, wie Dinge von innen funktionieren — von Kryptografie und Netzwerken bis hin zu Interface-Animation. In meiner Freizeit baue ich Spiele, Tools und schneide Videos.",
+      "about.text":        "Ich verstehe gern, wie Dinge von innen funktionieren — von Kryptografie und Netzwerken bis hin zu Interface-Animation. In meiner Freizeit baue ich Spiele, Tools, beschäftige Kryptowährungen und schneide Videos.",
       "edu.role":          "Cybersicherheit · 4. Jahr",
-      "edu.meta":          "Kryptografie, Netzwerke, Informationssicherheit. Wohnhaft in Deutschland.",
+      "edu.meta":          "Kryptografie, Netzwerke, Informationssicherheit.",
       "skills.eyebrow":    "02 — Skills",
       "skills.title":      "Womit ich arbeite.",
       "skills.all":        "Alle",
@@ -90,21 +92,23 @@
       "projects.eyebrow":  "03 — Projekte",
       "projects.title":    "Was ich gebaut habe.",
       "projects.all":      "Alle auf GitHub ansehen",
-      "proj.view":         "Repo ansehen →",
+      "proj.view":         "Repo →",
+      "proj.live":         "Live →",
       "proj.swipe":        "← wischen →",
-      "course.eyebrow":    "04 — Studienarbeiten",
-      "course.title":      "Akademische Arbeiten.",
-      "course.intro":      "Eine Auswahl an Hausarbeiten und praktischen Aufgaben aus meinem Studium.",
+      "course.eyebrow":    "04 — Ausbildung & Kurse",
+      "course.title":      "Akademische & berufliche Ausbildung.",
+      "course.intro":      "Universitätskurse und abgeschlossene Weiterbildungen.",
       "course.c1.t":       "Kryptografie",
       "course.c1.d":       "Komplexitätsanalyse von DSA, RSA und Elliptische-Kurven-Algorithmen; diskreter Logarithmus auf elliptischen Kurven.",
       "course.c2.t":       "Rechnernetze",
       "course.c2.d":       "OSI-Modell, IP-Subnetting, TCP/UDP, NAT und Routing.",
-      "course.c3.t":       "Informationsübertragungstheorie",
+      "course.c3.t":       "Theorie der Informationsübertragung",
       "course.c3.d":       "Signalabstandsmetriken, Mehrkanalsysteme und Fehleranalyse.",
+      "course.c4.t":       "Mate Academy — Frontend",
+      "course.c4.d":       "Frontend-Entwickler-Profession abgeschlossen: 334+ praktische Aufgaben zu HTML, CSS, JavaScript, TypeScript, React und Redux. Ausgestellt am 10. Januar 2026.",
       "lang.eyebrow":      "05 — Sprachen",
       "lang.title":        "Sprachen, die ich spreche.",
       "lang.native":       "Muttersprache",
-      "lang.ru":           "Russisch",
       "lang.uk":           "Ukrainisch",
       "lang.en":           "Englisch",
       "lang.de":           "Deutsch",
@@ -138,15 +142,17 @@
       name: "promptguard-ui",
       tag:  "React · Security",
       url:  "https://github.com/DaniilBarilotti/promptguard-ui",
+      live: "https://promptguard-ui.vercel.app",
       desc: {
         en: "Frontend of a team security system detecting prompt injection attacks on LLM apps. Chat UI with real-time threat visualization, incident log and Red Team mode. Built during internship at DevBrother.",
-        de: "Frontend eines Sicherheitssystems zur Erkennung von Prompt-Injection-Angriffen auf LLM-Apps. Chat-UI mit Echtzeit-Bedrohungsvisualisierung, Incident-Log und Red-Team-Modus. Entwickelt beim Praktikum bei DevBrother."
+        de: "Frontend eines Sicherheitssystems zur Erkennung von Prompt-Injection-Angriffen auf LLM-Apps. Chat-UI mit Echtzeit-Bedrohungsvisualisierung und Red-Team-Modus. Beim Praktikum bei DevBrother entwickelt."
       }
     },
     {
       name: "2048_game",
       tag:  "JavaScript",
       url:  "https://github.com/DaniilBarilotti/2048_game",
+      live: "https://daniilbarilotti.github.io/2048_game",
       desc: {
         en: "Classic 2048 puzzle implemented in vanilla JavaScript.",
         de: "Klassisches 2048-Puzzle in reinem JavaScript."
@@ -156,6 +162,7 @@
       name: "miami-landing",
       tag:  "SCSS",
       url:  "https://github.com/DaniilBarilotti/miami-landing",
+      live: "https://daniilbarilotti.github.io/miami-landing",
       desc: {
         en: "Responsive landing page built with semantic markup and SCSS.",
         de: "Responsive Landingpage mit semantischem Markup und SCSS."
@@ -165,20 +172,12 @@
       name: "phone-catalog",
       tag:  "TypeScript",
       url:  "https://github.com/DaniilBarilotti/phone-catalog",
+      live: "https://daniilbarilotti.github.io/phone-catalog",
       desc: {
         en: "Phone catalog app with filtering, sorting and a cart.",
         de: "Handy-Katalog mit Filter, Sortierung und Warenkorb."
       }
     },
-    {
-      name: "todo-app",
-      tag:  "TypeScript",
-      url:  "https://github.com/DaniilBarilotti/todo-app",
-      desc: {
-        en: "Task manager with clean state handling and a tidy UI.",
-        de: "Aufgabenverwaltung mit sauberem State-Handling und aufgeräumter UI."
-      }
-    }
   ];
 
   /* ======================= language ======================= */
@@ -196,18 +195,32 @@
     var track = document.getElementById("projTrack");
     track.innerHTML = "";
     PROJECTS.forEach(function (p) {
-      var a = document.createElement("a");
-      a.className = "proj-card";
-      a.href = p.url;
-      a.target = "_blank";
-      a.rel = "noopener";
-      a.innerHTML =
-        '<div class="proj-top"><h3></h3><span class="tag"></span></div><p></p><span class="proj-link"></span>';
-      a.querySelector("h3").textContent = p.name;
-      a.querySelector(".tag").textContent = p.tag;
-      a.querySelector("p").textContent = p.desc[lang] || p.desc.en;
-      a.querySelector(".proj-link").textContent = t("proj.view");
-      track.appendChild(a);
+      var card = document.createElement("div");
+      card.className = "proj-card";
+
+      var linksHtml = '<div class="proj-links">';
+      if (p.live) {
+        linksHtml += '<a class="proj-link" href="' + p.live + '" target="_blank" rel="noopener"></a>';
+      }
+      linksHtml += '<a class="proj-link repo" href="' + p.url + '" target="_blank" rel="noopener"></a>';
+      linksHtml += '</div>';
+
+      card.innerHTML =
+        '<div class="proj-top"><h3></h3><span class="tag"></span></div><p></p>' + linksHtml;
+
+      card.querySelector("h3").textContent = p.name;
+      card.querySelector(".tag").textContent = p.tag;
+      card.querySelector("p").textContent = p.desc[lang] || p.desc.en;
+
+      var links = card.querySelectorAll(".proj-link");
+      if (p.live) {
+        links[0].textContent = t("proj.live");
+        links[1].textContent = t("proj.view");
+      } else {
+        links[0].textContent = t("proj.view");
+      }
+
+      track.appendChild(card);
     });
     updateCarBtns();
   }
@@ -274,11 +287,7 @@
 
   paletteBtn.addEventListener("click", function () {
     var next = (palIndex + 1) % PALETTES.length;
-    if (reduce) {
-      palIndex = next;
-      applyPalette(next);
-      return;
-    }
+    if (reduce) { palIndex = next; applyPalette(next); return; }
     var r = paletteBtn.getBoundingClientRect();
     var cx = r.left + r.width / 2, cy = r.top + r.height / 2;
     var far = Math.hypot(Math.max(cx, innerWidth - cx), Math.max(cy, innerHeight - cy));
@@ -340,11 +349,7 @@
       if (!e.isIntersecting) return;
       mIo.disconnect();
       var txt = t("motiv.quote");
-      if (reduce) {
-        quoteTyped = true;
-        quote.textContent = txt;
-        return;
-      }
+      if (reduce) { quoteTyped = true; quote.textContent = txt; return; }
       quote.innerHTML = "<span class='cursor'></span>";
       var cur = quote.querySelector(".cursor"), i = 0;
       var iv = setInterval(function () {
@@ -371,13 +376,11 @@
       var o = actx.createOscillator(), g = actx.createGain();
       o.frequency.value = ok === false ? 110 : freqs[i];
       o.type = "sine";
-      o.connect(g);
-      g.connect(actx.destination);
+      o.connect(g); g.connect(actx.destination);
       g.gain.setValueAtTime(.0001, actx.currentTime);
       g.gain.exponentialRampToValueAtTime(.18, actx.currentTime + .02);
       g.gain.exponentialRampToValueAtTime(.0001, actx.currentTime + .32);
-      o.start();
-      o.stop(actx.currentTime + .34);
+      o.start(); o.stop(actx.currentTime + .34);
     } catch (e) {}
   }
 
@@ -400,8 +403,7 @@
   }
 
   function nextLevel() {
-    input = [];
-    level++;
+    input = []; level++;
     seq.push(Math.floor(Math.random() * 4));
     if (reduce) {
       statusEl.innerHTML = t("game.code") + " <b>" + seq.join(" ") + "</b> · " + t("game.repeat") + " " + level + ")";
@@ -412,24 +414,21 @@
   }
 
   function win() {
-    playing = false;
-    accepting = false;
+    playing = false; accepting = false;
     statusEl.textContent = t("game.win");
     startBtn.textContent = t("game.again");
     tiles.forEach(function (x, i) { setTimeout(function () { light(i); }, i * 120); });
   }
 
   function lose() {
-    playing = false;
-    accepting = false;
+    playing = false; accepting = false;
     statusEl.innerHTML = t("game.lose") + " <b>" + level + "</b>.";
     startBtn.textContent = t("game.restart");
   }
 
   function handleTile(i) {
     if (!playing || !accepting) return;
-    light(i);
-    input.push(i);
+    light(i); input.push(i);
     var idx = input.length - 1;
     if (input[idx] !== seq[idx]) { light(i, false); return lose(); }
     if (input.length === seq.length) {
@@ -463,9 +462,7 @@
 
   function startRain() {
     if (rainOn || reduce) return;
-    rainOn = true;
-    sizeC();
-    canvas.classList.add("on");
+    rainOn = true; sizeC(); canvas.classList.add("on");
     var fs = 16, cols = Math.floor(canvas.width / fs), drops = new Array(cols).fill(1);
     var chars = "01\u30A2\u30A4\u30A6\u30A8\u30AA\u30ABabcdef{}<>$#".split("");
     function draw() {
@@ -485,9 +482,7 @@
   }
 
   function stopRain() {
-    rainOn = false;
-    canvas.classList.remove("on");
-    cancelAnimationFrame(raf);
+    rainOn = false; canvas.classList.remove("on"); cancelAnimationFrame(raf);
     setTimeout(function () { ctx.clearRect(0, 0, canvas.width, canvas.height); }, 600);
   }
 
