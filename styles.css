@@ -232,3 +232,28 @@ footer{padding:40px 20px;text-align:center;color:var(--muted);font-size:13px;fon
   background-clip: text;
   color: transparent;
 }
+
+
+/* Portfolio presentation: all selected projects visible without scrolling a carousel. */
+.hero-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:28px;position:relative;z-index:2}
+.skip-link{position:fixed;top:8px;left:8px;z-index:100;padding:12px;background:var(--text);color:var(--ink);transform:translateY(-150%)}
+.skip-link:focus{transform:none}
+.carousel{display:block}
+.car-track.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible;gap:26px;width:100%}
+.project-grid .proj-card{min-width:0;padding:0 26px 26px;overflow:hidden;min-height:410px}
+.project-cover{height:174px;margin:0 -26px 22px;padding:24px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(135deg,#293959,#0b1627);border-bottom:1px solid var(--line)}
+.cover-name{font-size:26px;font-weight:800;letter-spacing:-.04em;color:#fff}
+.cover-symbol{font:12px 'Space Mono',monospace;letter-spacing:.16em;color:#ccd6ed}
+[data-kind="security"] .project-cover{background:linear-gradient(135deg,#194a40,#111c27)}
+[data-kind="forno"] .project-cover{background:#b92722}.project-grid [data-kind="forno"] .cover-name{font-size:38px}
+[data-kind="tasks"] .project-cover{background:linear-gradient(135deg,#524069,#171827)}
+[data-kind="game"] .project-cover{background:#725031}
+[data-kind="landing"] .project-cover{background:linear-gradient(135deg,#353942,#111217)}
+[data-kind="support"] .project-cover{background:linear-gradient(135deg,#07596b,#132530)}
+.project-type{font:11px 'Space Mono',monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:10px}
+.project-grid .tag{align-self:flex-start;margin-bottom:16px;white-space:normal}
+.project-grid p{line-height:1.75}.project-grid .proj-links{margin-top:20px}
+.car-hint{margin-top:20px}
+@media(min-width:1300px){.project-grid .proj-card{min-height:390px}}
+@media(max-width:720px){.car-track.project-grid{grid-template-columns:1fr}.hero-actions .btn{font-size:12px}.project-grid .proj-card{min-height:0}}
+@media(prefers-reduced-motion:reduce){.proj-card{transition:none}}

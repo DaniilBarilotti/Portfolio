@@ -1,0 +1,170 @@
+[
+  {
+    "name": "Phone Catalog",
+    "tag": "React · TypeScript · Redux",
+    "kind": "catalog",
+    "url": "https://github.com/DaniilBarilotti/phone-catalog",
+    "live": "https://daniilbarilotti.github.io/phone-catalog/",
+    "desc": {
+      "en": "A storefront frontend with product variants, URL-based sorting, pagination, persistent cart and favourites. Learning project with static product data; no payment backend.",
+      "de": "Shop-Frontend mit Produktvarianten, Sortierung in der URL, Pagination, persistentem Warenkorb und Favoriten. Lernprojekt mit statischen Produktdaten; ohne Zahlungsbackend."
+    },
+    "labels": {
+      "en": "Learning project",
+      "de": "Lernprojekt"
+    },
+    "image": "phone-catalog-updated.jpg",
+    "role": "Frontend-Lernprojekt",
+    "intro": "Eine zusammenhängende Shop-Oberfläche statt einzelner UI-Übungen: vom Einstieg über Produktvarianten bis zum Warenkorb. Das Projekt zeigt Komponenten, Routing und persistente Zustandsverwaltung.",
+    "features": [
+      "Kategorien für Smartphones, Tablets und Zubehör.",
+      "Detailseiten mit Farbe, Speicher und Produktspezifikationen.",
+      "Sortierung und Pagination über URL-Parameter.",
+      "Warenkorb-Mengen und Favoriten über localStorage."
+    ],
+    "architecture": "React-Komponenten und Seiten trennen Darstellung und Navigation. Redux Toolkit verwaltet Produkte, Warenkorb und Favoriten. Services laden den Katalog aus statischen JSON-Dateien.",
+    "decisions": "URL-Parameter halten Listenansichten teilbar. Der Warenkorb speichert Produkt-ID und Menge, statt vollständige Produktobjekte zu duplizieren. Wiederverwendbare Produktkarten vereinheitlichen Listen und Empfehlungen.",
+    "limits": "Frontend-Demo ohne Bezahlung, Bestellabwicklung oder Benutzerkonten. Persistenz gilt pro Browser. Der Hero nutzt nun eine statische responsive Produktkomposition statt des alten Sliders. Produktionsbuild, TypeScript und Komponenten-Lint bestehen; die veröffentlichte Desktopansicht wurde geprüft.",
+    "walkthrough": "Kategorie öffnen, Sortierung ändern, ein Produkt auswählen, Variante wechseln und zum Warenkorb hinzufügen. Nach einem Reload die gespeicherte Auswahl kontrollieren."
+  },
+  {
+    "name": "PromptGuard UI",
+    "tag": "React · Vite · API",
+    "live": "https://promptguard-ui.vercel.app",
+    "kind": "security",
+    "url": "https://github.com/DaniilBarilotti/promptguard-ui",
+    "desc": {
+      "en": "Chat and incident dashboard for an LLM guardrail system. My scope is the frontend and API integration. The standalone demo uses simulated verdicts, not a security detector.",
+      "de": "Chat und Vorfallübersicht für ein LLM-Guardrail-System. Mein Bereich: Frontend und API-Anbindung. Die eigenständige Demo nutzt simulierte Ergebnisse, keinen Sicherheitsdetektor."
+    },
+    "labels": {
+      "en": "Team project · frontend",
+      "de": "Teamprojekt · Frontend"
+    },
+    "image": "promptguard-ui.jpg",
+    "role": "Teamprojekt · Frontend-Beitrag",
+    "intro": "Die Oberfläche macht technische Guardrail-Ergebnisse verständlich: Chat, verdächtige Textstellen und Vorfälle werden in einer gemeinsamen Arbeitsfläche dargestellt.",
+    "features": [
+      "Markdown-Darstellung für Chat-Antworten.",
+      "Zustände für saubere, verdächtige und blockierte Anfragen.",
+      "Markierte Textfragmente und Angriffsmetadaten.",
+      "Vorfallübersicht, Beispielprompts, Sprach- und Themewechsel."
+    ],
+    "architecture": "Der API-Client übersetzt Proxy-Antworten in UI-Zustände. Ein Chat-Hook verwaltet Nachrichten und Anfragen. Separate Komponenten bilden Chat, Sicherheitsübersicht und Red-Team-Bereich. Der Node-Proxy und Python-Detektor liegen im Team-Repository.",
+    "decisions": "Eine zentrale Normalisierung hält Backend-Details aus Darstellungs-Komponenten heraus. HTTP 403 wird als fachliches Guardrail-Ergebnis angezeigt; Rate-Limits werden separat als Fehler behandelt.",
+    "limits": "Die eigene Arbeit in diesem Repository ist das Frontend. Der standalone Mock-Modus wechselt vordefinierte Ergebnisse unabhängig vom eingegebenen Text. Er ist kein Detektor und keine Sicherheitsgarantie.",
+    "walkthrough": "Chat-Ansicht und Red-Team-Beispiele öffnen. Den Weg eines Proxy-Ergebnisses von src/api/client.js bis zur Statusanzeige nachvollziehen."
+  },
+  {
+    "name": "FORNO Pizzeria",
+    "tag": "HTML · CSS · JavaScript",
+    "kind": "forno",
+    "url": "https://github.com/DaniilBarilotti/forno-pizzeria",
+    "live": "https://daniilbarilotti.github.io/forno-pizzeria/",
+    "desc": {
+      "en": "A German / English restaurant concept with an editorial layout, responsive menu and accessible ingredient accordions. Fictional venue, created as a portfolio design.",
+      "de": "Restaurantkonzept auf Deutsch und Englisch mit redaktionellem Layout, responsiver Speisekarte und zugänglichen Zutaten-Akkordeons. Fiktives Restaurant als Portfolioentwurf."
+    },
+    "labels": {
+      "en": "Design concept",
+      "de": "Designkonzept"
+    },
+    "image": "forno-pizzeria.jpg",
+    "role": "Eigenes Restaurantkonzept · Portfolioentwurf",
+    "intro": "Ein bewusst reduzierter Restaurantauftritt mit eigener visueller Richtung: warme Papierfarbe, Tomatenrot, große Typografie und klare Menüführung.",
+    "features": [
+      "Vollständige deutsche und englische Textansichten.",
+      "Responsives Hero-Layout und lesbare Speisekarte.",
+      "Native Zutaten-Akkordeons mit Tastaturbedienung.",
+      "Sichtbare Fokuszustände und reduzierte Bewegung."
+    ],
+    "architecture": "Statische HTML-Seite, CSS-Design-Tokens und ein kleiner JavaScript-Sprachwechsler. Originale Textknoten bleiben erhalten, damit wiederholtes Umschalten keine Inhalte verliert.",
+    "decisions": "Native HTML-Elemente übernehmen Navigation und Akkordeons. Ohne Framework und Build-Schritt bleibt die Seite leicht lokal zu öffnen. Die Sprache wird nach Möglichkeit auf dem Gerät gespeichert.",
+    "limits": "Das Restaurant ist fiktiv. Speisekarte und Preise sind Beispiele. Es gibt keinen Buchungs- oder Bestellservice und keine behaupteten Kundenresultate. Fotoquellen und Lizenzen bleiben im README dokumentiert.",
+    "walkthrough": "Sprache wechseln, zur Speisekarte navigieren und Zutaten aufklappen. Fokus mit der Tab-Taste kontrollieren."
+  },
+  {
+    "name": "To-do App",
+    "tag": "React · TypeScript · REST",
+    "kind": "tasks",
+    "url": "https://github.com/DaniilBarilotti/todo-app",
+    "live": "https://daniilbarilotti.github.io/todo-app/",
+    "desc": {
+      "en": "Task management with API-backed create, edit, delete and completion flows. A learning project focused on asynchronous UI, loading states and error feedback.",
+      "de": "Aufgabenverwaltung mit API für Erstellen, Bearbeiten, Löschen und Statuswechsel. Lernprojekt mit Fokus auf asynchroner UI, Ladezuständen und Fehlermeldungen."
+    },
+    "labels": {
+      "en": "Learning project",
+      "de": "Lernprojekt"
+    },
+    "image": "todo-app.jpg",
+    "role": "Frontend-Lernprojekt",
+    "intro": "Eine kleine Anwendung mit vollständigen asynchronen Aufgabenabläufen. Der Schwerpunkt liegt auf konsistentem UI-Zustand bei Laden, Bearbeiten und Fehlern.",
+    "features": [
+      "Aufgaben erstellen, bearbeiten und löschen.",
+      "Erledigungsstatus ändern.",
+      "Ansichten für alle, offene und erledigte Aufgaben.",
+      "Lade- und Fehlerrückmeldungen bei API-Aufrufen."
+    ],
+    "architecture": "Ein Fetch-Client sendet GET, POST, PATCH und DELETE an die externe Mate Academy API. Typisierte Komponenten bilden die Aufgabenansicht. useTodo kapselt den Bearbeitungszustand und die Eingabereferenz.",
+    "decisions": "Titel werden vor dem Speichern getrimmt. Ein leerer bearbeiteter Titel folgt dem Löschablauf. Nach fehlgeschlagenem Speichern erhält die Eingabe erneut den Fokus.",
+    "limits": "Aufgaben liegen in einer externen Lern-API, nicht ausschließlich in localStorage. Diese Anwendung enthält keinen eigenen Backend-Service und keine eigenständige Benutzerverwaltung. API-Verfügbarkeit beeinflusst die Demo.",
+    "walkthrough": "Eine Aufgabe erstellen, umbenennen, erledigen und filtern. Bei einem fehlgeschlagenen Request prüfen, ob Eingabe und Fehlerfeedback verständlich bleiben."
+  },
+  {
+    "name": "2048",
+    "tag": "JavaScript · SCSS",
+    "kind": "game",
+    "url": "https://github.com/DaniilBarilotti/2048_game",
+    "live": "https://daniilbarilotti.github.io/2048_game/",
+    "desc": {
+      "en": "A keyboard-controlled puzzle with tile merging, score tracking and win / loss detection. A learning project demonstrating array transformations and game state.",
+      "de": "Tastaturgesteuertes Puzzle mit Zusammenführen von Kacheln, Punktestand und Gewinn-/Verlusterkennung. Lernprojekt zu Array-Transformationen und Spielzustand."
+    },
+    "labels": {
+      "en": "Learning project",
+      "de": "Lernprojekt"
+    },
+    "image": "2048-game.jpg",
+    "role": "JavaScript-Lernprojekt",
+    "intro": "Eine Implementierung des bekannten 2048-Prinzips, die Array-Transformationen und einen klaren Spielzustand sichtbar macht. Die eigene Leistung ist die Umsetzung, nicht die Erfindung des Spielkonzepts.",
+    "features": [
+      "4 × 4 Spielfeld mit zufälligen neuen Kacheln.",
+      "Bewegung und Zusammenführung gleicher Werte.",
+      "Punktestand und Gewinn-/Verlustzustände.",
+      "Start und Neustart über eine gemeinsame Schaltfläche."
+    ],
+    "architecture": "Das Spielfeld ist ein zweidimensionales Array. Die Zeilenfunktion entfernt Nullen, verbindet gleiche Nachbarn einmal und füllt leere Stellen wieder auf. Vertikale Züge wenden dieselbe Logik auf Spalten an.",
+    "decisions": "Ein Vergleich vor und nach dem Zug verhindert neue Kacheln bei wirkungslosen Bewegungen. Richtungslogik wird über Umkehrung von Zeilen oder Spalten wiederverwendet.",
+    "limits": "Tastatursteuerung; noch keine Touch-Steuerung oder gespeicherten Partien. Starter-Credits und GPL-3.0-Lizenz bleiben erhalten. Die aktuelle Korrektur ignoriert Pfeiltasten vor Spielstart und fremde Tasten.",
+    "walkthrough": "Start wählen und mit Pfeiltasten spielen. An der Zeile [2, 2, 2, 2] erklären, warum der nächste Zustand [4, 4, 0, 0] ist."
+  },
+  {
+    "name": "Bose Landing Page",
+    "tag": "HTML · SCSS · BEM",
+    "kind": "landing",
+    "url": "https://github.com/DaniilBarilotti/miami-landing",
+    "live": "https://daniilbarilotti.github.io/miami-landing/",
+    "desc": {
+      "en": "Responsive product landing page based on a training design brief. Product sections, mobile navigation and a contact-form layout; no affiliation with Bose.",
+      "de": "Responsive Produkt-Landingpage auf Basis einer Übungsaufgabe. Produktbereiche, mobile Navigation und Kontaktformular-Layout; keine Verbindung zu Bose."
+    },
+    "labels": {
+      "en": "Design implementation",
+      "de": "Layoutübung"
+    },
+    "image": "bose-landing.jpg",
+    "role": "Layoutübung nach Designvorgabe",
+    "intro": "Eine Produkt-Landingpage, die eine vorgegebene Gestaltung in semantisches HTML und responsive SCSS-Komponenten überträgt.",
+    "features": [
+      "Hero, Produktempfehlungen und Produktkategorien.",
+      "Mobile Navigation und Ankerlinks.",
+      "Kontaktformular-Layout mit nativer Validierung.",
+      "BEM-Klassen und wiederverwendbare SCSS-Hilfen."
+    ],
+    "architecture": "Statische HTML-Struktur mit getrennten SCSS-Dateien für Header, Menü, Galerie, Produkte und Formular. Mixins und Variablen vereinheitlichen Raster und responsive Abstände.",
+    "decisions": "Die Gestaltung wird in kleine benannte Bereiche zerlegt. Native Links und Formulare behalten erwartbares Browser-Verhalten. Das Projekt demonstriert Layout-Handwerk neben den React-Projekten.",
+    "limits": "Übungsprojekt ohne Verbindung zur Marke Bose. Das Kontaktformular hat keinen Versand-Backend. Der Repositoryname miami-landing stammt aus dem ursprünglichen Starter und beschreibt den tatsächlichen Bose-Inhalt nicht.",
+    "walkthrough": "Menü auf schmaler Ansicht öffnen, zu Produktbereichen navigieren und das Formular-Layout prüfen."
+  }
+]

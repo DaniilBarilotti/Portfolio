@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#projects">Skip to projects / Zu den Projekten</a>
   <div class="bg-aura"></div>
   <canvas id="matrix"></canvas>
 
@@ -43,8 +44,9 @@
     </div>
     <h1 class="anim a2">Daniil Barilotti <span class="grad">.</span></h1>
     <p class="tagline anim a3" data-i18n="hero.tagline">
-      I build products that are secure at the core and a pleasure to use.
+      Frontend development, with a foundation in cybersecurity.
     </p>
+    <div class="hero-actions"><a class="btn" href="#projects">Explore projects / Projekte</a><a class="btn ghost" href="career/cv-de.html">Lebenslauf</a><a class="btn ghost" href="career/Daniil-Barilotti-Portfolio.html">Portfolio HTML</a><a class="btn ghost" href="career/Daniil-Barilotti-Portfolio-DE.pdf">Portfolio PDF</a></div>
     <div class="scroll-hint"><span>SCROLL</span><span class="line"></span></div>
   </section>
 
@@ -119,11 +121,9 @@
   <section id="projects">
     <div class="wrap">
       <div class="eyebrow reveal" data-i18n="projects.eyebrow">03 — Projects</div>
-      <h2 class="sec-title reveal d1" data-i18n="projects.title">Things I built.</h2>
+      <h2 class="sec-title reveal d1" data-i18n="projects.title">Selected work.</h2>
       <div class="carousel reveal d1">
-        <button class="car-btn prev" id="carPrev" aria-label="Previous">‹</button>
-        <div class="car-track" id="projTrack"></div>
-        <button class="car-btn next" id="carNext" aria-label="Next">›</button>
+        <div class="car-track project-grid" id="projTrack"></div>
       </div>
       <div class="car-hint" data-i18n="proj.swipe">← swipe →</div>
       <div class="center reveal d1" style="margin-top:32px">
@@ -247,3 +247,4 @@
   <script src="main.js"></script>
 </body>
 </html>
+
