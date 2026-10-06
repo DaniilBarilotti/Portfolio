@@ -29,3 +29,9 @@ The refreshed static portfolio and the new SupportDesk demo are validated separa
 - Browser layout and interaction checks could not run: the environment has no usable Chromium executable, and its download failed. Desktop/mobile layout is not claimed as browser-verified.
 
 Phone Catalog: existing catalogue packshots now replace the hero/category artwork. Published desktop screenshot and image loading verified. Independent mobile browser rendering was not tested.
+
+## CineDrop maintenance · 6 October 2026
+
+Source recovered from the existing CineDrop Site. TypeScript and production build pass. Two regression tests check repeat avoidance, single/empty pools and the unique IDs/title metadata in all 24 case files. Missing posters no longer exclude a title or prevent a result. Discover parameters survive the film detail round trip. Browser QA was unavailable in the managed Sites environment; no physical-device test is claimed. The portfolio screenshot is the saved pre-maintenance published view. Existing owner-only audience is preserved.
+
+University practice is described within PromptGuard, not counted as an additional independent application. Translator remains pending identification of the existing project.

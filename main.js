@@ -154,18 +154,33 @@
     }
   },
   {
+    "name": "CineDrop",
+    "tag": "React · TypeScript · Workers",
+    "url": null,
+    "live": "https://cinedrop.krismey2006.chatgpt.site",
+    "kind": "cinema",
+    "labels": {
+      "en": "Personal project · public demo",
+      "de": "Eigenes Projekt · öffentliche Demo"
+    },
+    "desc": {
+      "en": "Film discovery with 24 themed cases, a 12,759-film catalog, animated selection and series/anime integrations. Public demo; application source remains private.",
+      "de": "Filmentdeckung mit 24 Themenboxen, 12.759 Filmen, animierter Auswahl und Serien-/Anime-Anbindung. Öffentliche Demo; der Anwendungsquellcode bleibt privat."
+    }
+  },
+  {
     "name": "PromptGuard UI",
     "tag": "React · Vite · API",
     "live": "https://promptguard-ui.vercel.app",
     "kind": "security",
     "url": "https://github.com/DaniilBarilotti/promptguard-ui",
     "desc": {
-      "en": "Chat and incident dashboard for an LLM guardrail system. My scope is the frontend and API integration. The standalone demo uses simulated verdicts, not a security detector.",
-      "de": "Chat und Vorfallübersicht für ein LLM-Guardrail-System. Mein Bereich: Frontend und API-Anbindung. Die eigenständige Demo nutzt simulierte Ergebnisse, keinen Sicherheitsdetektor."
+      "en": "Frontend contribution to PromptGuard during university internship at DevBrother, 29 June–19 July 2026: chat, guardrail statuses, incident UI and API integration. Standalone demo uses predefined mock responses.",
+      "de": "Frontend-Beitrag zu PromptGuard im Hochschulpraktikum bei DevBrother, 29. Juni–19. Juli 2026: Chat, Guardrail-Status, Vorfallübersicht und API-Anbindung. Die Demo verwendet vordefinierte Mock-Antworten."
     },
     "labels": {
-      "en": "Team project · frontend",
-      "de": "Teamprojekt · Frontend"
+      "en": "University internship · frontend contribution",
+      "de": "Hochschulpraktikum · Frontend-Beitrag"
     }
   },
   {
@@ -253,14 +268,14 @@
       if (p.live) {
         linksHtml += '<a class="proj-link" href="' + p.live + '" target="_blank" rel="noopener"></a>';
       }
-      linksHtml += '<a class="proj-link repo" href="' + p.url + '" target="_blank" rel="noopener"></a>';
+      if (p.url) linksHtml += '<a class="proj-link repo" href="' + p.url + '" target="_blank" rel="noopener"></a>';
       linksHtml += '</div>';
 
       card.innerHTML =
         '<div class="project-cover" aria-hidden="true"><span class="cover-name"></span><span class="cover-symbol"></span></div><div class="project-type"></div><div class="proj-top"><h3></h3></div><span class="tag"></span><p></p>' + linksHtml;
 
       card.querySelector(".cover-name").textContent = p.name;
-      card.querySelector(".cover-symbol").textContent = ({catalog:"01 / SHOP",security:"02 / GUARD",forno:"03 / FORNO",tasks:"04 / TASKS",game:"05 / 2048",landing:"06 / BOSE",support:"07 / DESK"})[p.kind];
+      card.querySelector(".cover-symbol").textContent = ({catalog:"01 / SHOP",security:"02 / GUARD",forno:"03 / FORNO",tasks:"04 / TASKS",game:"05 / 2048",landing:"06 / BOSE",cinema:"02 / CINEMA"})[p.kind];
       card.querySelector(".project-type").textContent = p.labels[lang];
       card.querySelector("h3").textContent = p.name;
       card.querySelector(".tag").textContent = p.tag;
@@ -269,8 +284,8 @@
       var links = card.querySelectorAll(".proj-link");
       if (p.live) {
         links[0].textContent = t("proj.live");
-        links[1].textContent = t("proj.view");
-      } else {
+        if (p.url) links[1].textContent = t("proj.view");
+      } else if (p.url) {
         links[0].textContent = t("proj.view");
       }
 

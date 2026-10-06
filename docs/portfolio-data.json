@@ -28,22 +28,51 @@
     "walkthrough": "Kategorie öffnen, Sortierung ändern, ein Produkt auswählen, Variante wechseln und zum Warenkorb hinzufügen. Nach einem Reload die gespeicherte Auswahl kontrollieren."
   },
   {
+    "image": "cinedrop.jpg",
+    "role": "Eigenes Webprojekt · öffentliche Demo",
+    "intro": "CineDrop hilft bei der Filmauswahl: 24 Themenboxen kombinieren eine animierte Zufallsauswahl mit einem durchsuchbaren Katalog von 12.759 Filmen. Serien und Anime haben eigene Ansichten.",
+    "features": [
+      "Themenboxen für Filme, Serien, Anime und Animation.",
+      "Suche nach Titel, Darsteller oder Regisseur, Filter und Sortierung.",
+      "Zufallsauswahl mit Schnellmodus, Tonoption und reduzierter Bewegung.",
+      "Detailseiten mit Quellenangaben und Rückkehr zur Suche."
+    ],
+    "architecture": "React und TypeScript bilden die Oberfläche. Vinext läuft auf Cloudflare Workers. Lokale JSON-Kataloge versorgen Filme und Themenboxen; API-Routen normalisieren TVmaze- und AniList-Daten, cachen Antworten und behandeln Ausfälle.",
+    "decisions": "Die Auswahl erfolgt unabhängig von der Verfügbarkeit externer Poster. Ersatzkarten halten den Ablauf nutzbar. Bei mehreren Titeln wird eine direkte Wiederholung vermieden. Suchparameter bleiben in der URL und im Rücksprung aus der Detailseite erhalten.",
+    "limits": "Die Demo ist öffentlich; der Anwendungsquellcode bleibt privat. Externe Daten- und Bilddienste können ausfallen; Bewertungen sind mit Quelle und Datum gekennzeichnet. Kein Filmstreaming. TypeScript, Regressionstests und Build bestehen; die Änderungen wurden nicht im Browser auf einem Mobilgerät geprüft.",
+    "walkthrough": "Eine Themenbox öffnen, Schnellmodus oder Animation wählen und einen Titel aufrufen. In Discover suchen, Genre ändern, eine Detailseite öffnen und zur gleichen Suche zurückkehren.",
+    "caption": "Gespeicherte Ansicht der veröffentlichten Version vor der Wartung · September 2026",
+    "name": "CineDrop",
+    "tag": "React · TypeScript · Workers",
+    "url": null,
+    "live": "https://cinedrop.krismey2006.chatgpt.site",
+    "kind": "cinema",
+    "labels": {
+      "en": "Personal project · public demo",
+      "de": "Eigenes Projekt · öffentliche Demo"
+    },
+    "desc": {
+      "en": "Film discovery with 24 themed cases, a 12,759-film catalog, animated selection and series/anime integrations. Public demo; application source remains private.",
+      "de": "Filmentdeckung mit 24 Themenboxen, 12.759 Filmen, animierter Auswahl und Serien-/Anime-Anbindung. Öffentliche Demo; der Anwendungsquellcode bleibt privat."
+    }
+  },
+  {
     "name": "PromptGuard UI",
     "tag": "React · Vite · API",
     "live": "https://promptguard-ui.vercel.app",
     "kind": "security",
     "url": "https://github.com/DaniilBarilotti/promptguard-ui",
     "desc": {
-      "en": "Chat and incident dashboard for an LLM guardrail system. My scope is the frontend and API integration. The standalone demo uses simulated verdicts, not a security detector.",
-      "de": "Chat und Vorfallübersicht für ein LLM-Guardrail-System. Mein Bereich: Frontend und API-Anbindung. Die eigenständige Demo nutzt simulierte Ergebnisse, keinen Sicherheitsdetektor."
+      "en": "Frontend contribution to PromptGuard during university internship at DevBrother, 29 June–19 July 2026: chat, guardrail statuses, incident UI and API integration. Standalone demo uses predefined mock responses.",
+      "de": "Frontend-Beitrag zu PromptGuard im Hochschulpraktikum bei DevBrother, 29. Juni–19. Juli 2026: Chat, Guardrail-Status, Vorfallübersicht und API-Anbindung. Die Demo verwendet vordefinierte Mock-Antworten."
     },
     "labels": {
-      "en": "Team project · frontend",
-      "de": "Teamprojekt · Frontend"
+      "en": "University internship · frontend contribution",
+      "de": "Hochschulpraktikum · Frontend-Beitrag"
     },
     "image": "promptguard-ui.jpg",
-    "role": "Teamprojekt · Frontend-Beitrag",
-    "intro": "Die Oberfläche macht technische Guardrail-Ergebnisse verständlich: Chat, verdächtige Textstellen und Vorfälle werden in einer gemeinsamen Arbeitsfläche dargestellt.",
+    "role": "Hochschulpraktikum · Frontend-Beitrag",
+    "intro": "Hochschulpraktikum bei DevBrother (29. Juni–19. Juli 2026). Der eigene Beitrag zur Teamlösung PromptGuard umfasst die React-Oberfläche: Chat, Guardrail-Status, verdächtige Textstellen und eine Vorfallübersicht.",
     "features": [
       "Markdown-Darstellung für Chat-Antworten.",
       "Zustände für saubere, verdächtige und blockierte Anfragen.",

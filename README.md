@@ -38,3 +38,9 @@ The website includes language and palette switches, category-based skills, reduc
 ## Application use
 
 Confirm education dates, course certificates, internship dates and personal contribution before submitting a CV. A new demo belongs in an application after the applicant can run it, change it and explain it. Repository starter credits and licences remain intact.
+
+## CineDrop and university practice
+
+CineDrop is a seventh selected project: React, TypeScript and a Workers backend; 24 cases and a 12,759-film collection. Its demo is public; application source remains private. The source stays in its existing Sites repository.
+
+PromptGuard is documented as the frontend contribution from the DevBrother university internship, 29 June–19 July 2026. See docs/university-practice.md.
