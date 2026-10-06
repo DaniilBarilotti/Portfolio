@@ -12,10 +12,10 @@
       "nav.coursework":    "Coursework",
       "nav.languages":     "Languages",
       "nav.contacts":      "Contact",
-      "hero.tagline":      "I build products that are secure at the core and a pleasure to use.",
+      "hero.tagline":      "Frontend development, with a foundation in cybersecurity.",
       "about.eyebrow":     "01 — About",
       "about.title":       "Who I am & where I study.",
-      "about.text":        "I like understanding how things work from the inside — from cryptography and networks to interface motion. In my free time I build games, tools, work with cryptocurrencies and edit video content.",
+      "about.text":        "I study cybersecurity at V. N. Karazin National University and work with React, TypeScript and responsive interfaces. My projects explore frontend state, API integration and usable security dashboards.",
       "edu.role":          "Cybersecurity · 4th year",
       "edu.meta":          "Cryptography, networking, information security.",
       "skills.eyebrow":    "02 — Skills",
@@ -25,11 +25,11 @@
       "skills.sec":        "Security",
       "skills.tools":      "Tools",
       "projects.eyebrow":  "03 — Projects",
-      "projects.title":    "Things I built.",
+      "projects.title":    "Selected work.",
       "projects.all":      "View all on GitHub",
       "proj.view":         "Repo →",
       "proj.live":         "Live →",
-      "proj.swipe":        "← swipe →",
+      "proj.swipe":        "Source code, scope and demos — in one place.",
       "course.eyebrow":    "04 — Education & Coursework",
       "course.title":      "Academic & professional training.",
       "course.intro":      "University coursework and completed courses.",
@@ -65,7 +65,7 @@
       "game.repeat":       "repeat it on the tiles (level",
       "contacts.eyebrow":  "08 — Contact",
       "contacts.title":    "Let\u2019s connect",
-      "contacts.lead":     "Open to projects, internships and good conversations.",
+      "contacts.lead":     "Based in Alfeld, Germany. Open to junior frontend roles, internships and IT-support opportunities.",
       "contacts.email":    "Email",
       "footer.tag":        "Cybersecurity · Frontend"
     },
@@ -77,10 +77,10 @@
       "nav.coursework":    "Ausbildung",
       "nav.languages":     "Sprachen",
       "nav.contacts":      "Kontakt",
-      "hero.tagline":      "Ich baue Produkte, die im Kern sicher und angenehm zu benutzen sind.",
+      "hero.tagline":      "Frontend-Entwicklung mit einem Fundament in Cybersicherheit.",
       "about.eyebrow":     "01 — Über mich",
       "about.title":       "Wer ich bin & wo ich studiere.",
-      "about.text":        "Ich verstehe gern, wie Dinge von innen funktionieren — von Kryptografie und Netzwerken bis hin zu Interface-Animation. In meiner Freizeit baue ich Spiele, Tools, beschäftige Kryptowährungen und schneide Videos.",
+      "about.text":        "Ich studiere Cybersicherheit an der Nationalen W.-N.-Karasin-Universität und arbeite mit React, TypeScript und responsiven Oberflächen. Meine Projekte behandeln Frontend-Zustand, API-Anbindung und verständliche Sicherheits-Dashboards.",
       "edu.role":          "Cybersicherheit · 4. Jahr",
       "edu.meta":          "Kryptografie, Netzwerke, Informationssicherheit.",
       "skills.eyebrow":    "02 — Skills",
@@ -90,11 +90,11 @@
       "skills.sec":        "Sicherheit",
       "skills.tools":      "Tools",
       "projects.eyebrow":  "03 — Projekte",
-      "projects.title":    "Was ich gebaut habe.",
+      "projects.title":    "Ausgewählte Projekte.",
       "projects.all":      "Alle auf GitHub ansehen",
       "proj.view":         "Repo →",
       "proj.live":         "Live →",
-      "proj.swipe":        "← wischen →",
+      "proj.swipe":        "Quellcode, Projektumfang und Demos an einem Ort.",
       "course.eyebrow":    "04 — Ausbildung & Kurse",
       "course.title":      "Akademische & berufliche Ausbildung.",
       "course.intro":      "Universitätskurse und abgeschlossene Weiterbildungen.",
@@ -130,7 +130,7 @@
       "game.repeat":       "wiederhole ihn auf den Kacheln (Level",
       "contacts.eyebrow":  "08 — Kontakt",
       "contacts.title":    "Lass uns vernetzen",
-      "contacts.lead":     "Offen für Projekte, Praktika und gute Gespräche.",
+      "contacts.lead":     "In Alfeld, Deutschland. Offen für Junior-Frontend-Stellen, Praktika und IT-Support.",
       "contacts.email":    "E-Mail",
       "footer.tag":        "Cybersicherheit · Frontend"
     }
@@ -138,47 +138,112 @@
 
   /* ======================= Projects ======================= */
   var PROJECTS = [
-    {
-      name: "promptguard-ui",
-      tag:  "React · Security",
-      url:  "https://github.com/DaniilBarilotti/promptguard-ui",
-      live: "https://promptguard-ui.vercel.app",
-      desc: {
-        en: "Frontend of a team security system detecting prompt injection attacks on LLM apps. Chat UI with real-time threat visualization, incident log and Red Team mode. Built during internship at DevBrother.",
-        de: "Frontend eines Sicherheitssystems zur Erkennung von Prompt-Injection-Angriffen auf LLM-Apps. Chat-UI mit Echtzeit-Bedrohungsvisualisierung und Red-Team-Modus. Beim Praktikum bei DevBrother entwickelt."
-      }
+  {
+    "name": "Phone Catalog",
+    "tag": "React · TypeScript · Redux",
+    "kind": "catalog",
+    "url": "https://github.com/DaniilBarilotti/phone-catalog",
+    "live": "https://daniilbarilotti.github.io/phone-catalog/",
+    "desc": {
+      "en": "A storefront frontend with product variants, URL-based sorting, pagination, persistent cart and favourites. Learning project with static product data; no payment backend.",
+      "de": "Shop-Frontend mit Produktvarianten, Sortierung in der URL, Pagination, persistentem Warenkorb und Favoriten. Lernprojekt mit statischen Produktdaten; ohne Zahlungsbackend."
     },
-    {
-      name: "2048_game",
-      tag:  "JavaScript",
-      url:  "https://github.com/DaniilBarilotti/2048_game",
-      live: "https://daniilbarilotti.github.io/2048_game",
-      desc: {
-        en: "Classic 2048 puzzle implemented in vanilla JavaScript.",
-        de: "Klassisches 2048-Puzzle in reinem JavaScript."
-      }
+    "labels": {
+      "en": "Learning project",
+      "de": "Lernprojekt"
+    }
+  },
+  {
+    "name": "PromptGuard UI",
+    "tag": "React · Vite · API",
+    "live": "https://promptguard-ui.vercel.app",
+    "kind": "security",
+    "url": "https://github.com/DaniilBarilotti/promptguard-ui",
+    "desc": {
+      "en": "Chat and incident dashboard for an LLM guardrail system. My scope is the frontend and API integration. The standalone demo uses simulated verdicts, not a security detector.",
+      "de": "Chat und Vorfallübersicht für ein LLM-Guardrail-System. Mein Bereich: Frontend und API-Anbindung. Die eigenständige Demo nutzt simulierte Ergebnisse, keinen Sicherheitsdetektor."
     },
-    {
-      name: "miami-landing",
-      tag:  "SCSS",
-      url:  "https://github.com/DaniilBarilotti/miami-landing",
-      live: "https://daniilbarilotti.github.io/miami-landing",
-      desc: {
-        en: "Responsive landing page built with semantic markup and SCSS.",
-        de: "Responsive Landingpage mit semantischem Markup und SCSS."
-      }
+    "labels": {
+      "en": "Team project · frontend",
+      "de": "Teamprojekt · Frontend"
+    }
+  },
+  {
+    "name": "FORNO Pizzeria",
+    "tag": "HTML · CSS · JavaScript",
+    "kind": "forno",
+    "url": "https://github.com/DaniilBarilotti/forno-pizzeria",
+    "live": "https://daniilbarilotti.github.io/forno-pizzeria/",
+    "desc": {
+      "en": "A German / English restaurant concept with an editorial layout, responsive menu and accessible ingredient accordions. Fictional venue, created as a portfolio design.",
+      "de": "Restaurantkonzept auf Deutsch und Englisch mit redaktionellem Layout, responsiver Speisekarte und zugänglichen Zutaten-Akkordeons. Fiktives Restaurant als Portfolioentwurf."
     },
-    {
-      name: "phone-catalog",
-      tag:  "TypeScript",
-      url:  "https://github.com/DaniilBarilotti/phone-catalog",
-      live: "https://daniilbarilotti.github.io/phone-catalog",
-      desc: {
-        en: "Phone catalog app with filtering, sorting and a cart.",
-        de: "Handy-Katalog mit Filter, Sortierung und Warenkorb."
-      }
+    "labels": {
+      "en": "Design concept",
+      "de": "Designkonzept"
+    }
+  },
+  {
+    "name": "To-do App",
+    "tag": "React · TypeScript · REST",
+    "kind": "tasks",
+    "url": "https://github.com/DaniilBarilotti/todo-app",
+    "live": "https://daniilbarilotti.github.io/todo-app/",
+    "desc": {
+      "en": "Task management with API-backed create, edit, delete and completion flows. A learning project focused on asynchronous UI, loading states and error feedback.",
+      "de": "Aufgabenverwaltung mit API für Erstellen, Bearbeiten, Löschen und Statuswechsel. Lernprojekt mit Fokus auf asynchroner UI, Ladezuständen und Fehlermeldungen."
     },
-  ];
+    "labels": {
+      "en": "Learning project",
+      "de": "Lernprojekt"
+    }
+  },
+  {
+    "name": "2048",
+    "tag": "JavaScript · SCSS",
+    "kind": "game",
+    "url": "https://github.com/DaniilBarilotti/2048_game",
+    "live": "https://daniilbarilotti.github.io/2048_game/",
+    "desc": {
+      "en": "A keyboard-controlled puzzle with tile merging, score tracking and win / loss detection. A learning project demonstrating array transformations and game state.",
+      "de": "Tastaturgesteuertes Puzzle mit Zusammenführen von Kacheln, Punktestand und Gewinn-/Verlusterkennung. Lernprojekt zu Array-Transformationen und Spielzustand."
+    },
+    "labels": {
+      "en": "Learning project",
+      "de": "Lernprojekt"
+    }
+  },
+  {
+    "name": "Bose Landing Page",
+    "tag": "HTML · SCSS · BEM",
+    "kind": "landing",
+    "url": "https://github.com/DaniilBarilotti/miami-landing",
+    "live": "https://daniilbarilotti.github.io/miami-landing/",
+    "desc": {
+      "en": "Responsive product landing page based on a training design brief. Product sections, mobile navigation and a contact-form layout; no affiliation with Bose.",
+      "de": "Responsive Produkt-Landingpage auf Basis einer Übungsaufgabe. Produktbereiche, mobile Navigation und Kontaktformular-Layout; keine Verbindung zu Bose."
+    },
+    "labels": {
+      "en": "Design implementation",
+      "de": "Layoutübung"
+    }
+  },
+  {
+    "name": "SupportDesk Lite",
+    "tag": "Python · SQLite · JavaScript",
+    "live": null,
+    "kind": "support",
+    "url": "https://github.com/DaniilBarilotti/Portfolio/tree/portfolio-refresh-20261006/projects/supportdesk-lite",
+    "desc": {
+      "en": "A new local IT-ticket tracker with a SQLite database, JSON API and browser dashboard. Source and setup guide available; the backend runs locally.",
+      "de": "Neuer lokaler IT-Ticket-Tracker mit SQLite-Datenbank, JSON-API und Browser-Dashboard. Quellcode und Startanleitung verfügbar; das Backend läuft lokal."
+    },
+    "labels": {
+      "en": "New portfolio demo",
+      "de": "Neue Portfoliodemo"
+    }
+  }
+];
 
   /* ======================= language ======================= */
   var lang = "en";
@@ -197,6 +262,7 @@
     PROJECTS.forEach(function (p) {
       var card = document.createElement("div");
       card.className = "proj-card";
+      card.dataset.kind = p.kind;
 
       var linksHtml = '<div class="proj-links">';
       if (p.live) {
@@ -206,8 +272,11 @@
       linksHtml += '</div>';
 
       card.innerHTML =
-        '<div class="proj-top"><h3></h3><span class="tag"></span></div><p></p>' + linksHtml;
+        '<div class="project-cover" aria-hidden="true"><span class="cover-name"></span><span class="cover-symbol"></span></div><div class="project-type"></div><div class="proj-top"><h3></h3></div><span class="tag"></span><p></p>' + linksHtml;
 
+      card.querySelector(".cover-name").textContent = p.name;
+      card.querySelector(".cover-symbol").textContent = ({catalog:"01 / SHOP",security:"02 / GUARD",forno:"03 / FORNO",tasks:"04 / TASKS",game:"05 / 2048",landing:"06 / BOSE",support:"07 / DESK"})[p.kind];
+      card.querySelector(".project-type").textContent = p.labels[lang];
       card.querySelector("h3").textContent = p.name;
       card.querySelector(".tag").textContent = p.tag;
       card.querySelector("p").textContent = p.desc[lang] || p.desc.en;
@@ -495,3 +564,4 @@
   /* ======================= init ======================= */
   applyLang();
 })();
+

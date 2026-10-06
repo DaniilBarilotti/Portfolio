@@ -1,45 +1,40 @@
-# Personal Portfolio
+# Daniil Barilotti — Portfolio
 
-My personal portfolio — a fast, bilingual single-page site built from scratch with vanilla HTML, CSS and JavaScript. No frameworks, no build step.
+A bilingual English / German portfolio for frontend and IT roles. Selected projects are presented with their real scope, stack, source code and demo links.
 
-🔗 **Live:** [Portfolio](https://daniilbarilotti.github.io/Portfolio/)
+[Current published site](https://daniilbarilotti.github.io/Portfolio/) · [GitHub](https://github.com/DaniilBarilotti)
 
-## Features
+## Selected work
 
-- **Bilingual (EN / DE)** — full interface translation with a language switcher; the choice is saved between visits.
-- **Color themes** — a palette button that smoothly transitions the whole accent scheme with an expanding color ripple.
-- **Projects carousel** — a swipeable, scroll-snapping carousel that scales to any number of projects.
-- **Sections** — about & education, skills with category filters, projects, university coursework, languages, motivation and contacts.
-- **Mini-game** — a small "access code" memory game with sound, written from scratch on the Web Audio API.
-- **Motion** — scroll-reveal animations and a typewriter effect, with full `prefers-reduced-motion` support.
-- **Responsive** — works from mobile to desktop, keyboard-accessible.
+| Project | Focus | Scope |
+| --- | --- | --- |
+| Phone Catalog | React, TypeScript, Redux, routing | Storefront frontend with static JSON data |
+| PromptGuard UI | React, chat, API mapping | Frontend contribution to a team security project |
+| FORNO Pizzeria | Responsive UI, DE / EN, accessibility | Fictional restaurant design concept |
+| To-do App | React, TypeScript, asynchronous state | Learning app using an external task API |
+| 2048 | JavaScript arrays and game state | Learning implementation of an existing puzzle |
+| Bose Landing Page | HTML, SCSS, BEM | Training design implementation, no brand affiliation |
+| SupportDesk Lite | Python, SQLite, JSON API | New local single-user demo; backend is run locally |
 
-## Tech stack
-
-- HTML5
-- CSS3 (custom properties, grid, scroll-snap)
-- Vanilla JavaScript (IntersectionObserver, Web Audio API, Canvas)
-- Google Fonts — Manrope & Space Mono
-
-No dependencies and no bundler — the site runs straight from the files.
-
-## Structure
-
-```
-.
-├── index.html      # markup & content
-├── styles.css      # styles
-├── main.js         # translations, interactions, carousel, mini-game
-└── assets/         # images
-```
-
-Content and translations live in the `I18N` object in `main.js`; projects are defined in the `PROJECTS` array in the same file.
-
-## Run locally
-
-Just open `index.html` in a browser, or serve the folder:
+## Run this website
 
 ```bash
 python3 -m http.server 8000
-# then open http://localhost:8000
 ```
+
+Open `http://localhost:8000`. No build step or package installation is required. Fonts and the avatar are external resources; the layout has font fallbacks.
+
+## Structure
+
+- `index.html`, `styles.css`, `main.js`: portfolio content, design and interactions.
+- `career/cv-de.html`: printable German CV draft.
+- `career/project-descriptions.md`: concise DE / EN project descriptions for applications.
+- `docs/project-review.md`: source-based review and known limitations.
+- `docs/interview-preparation.md`: study guide to explain the code and project decisions.
+- `projects/supportdesk-lite/`: a separate local web app with a Python backend; see its README.
+
+The website includes language and palette switches, category-based skills, reduced-motion support and a small memory game. The project grid exposes all selected work directly.
+
+## Application use
+
+Confirm education dates, course certificates, internship dates and personal contribution before submitting a CV. A new demo belongs in an application after the applicant can run it, change it and explain it. Repository starter credits and licences remain intact.
