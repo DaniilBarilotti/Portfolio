@@ -227,21 +227,6 @@
       "en": "Design implementation",
       "de": "Layoutübung"
     }
-  },
-  {
-    "name": "SupportDesk Lite",
-    "tag": "Python · SQLite · JavaScript",
-    "live": null,
-    "kind": "support",
-    "url": "https://github.com/DaniilBarilotti/Portfolio/tree/portfolio-refresh-20261006/projects/supportdesk-lite",
-    "desc": {
-      "en": "A new local IT-ticket tracker with a SQLite database, JSON API and browser dashboard. Source and setup guide available; the backend runs locally.",
-      "de": "Neuer lokaler IT-Ticket-Tracker mit SQLite-Datenbank, JSON-API und Browser-Dashboard. Quellcode und Startanleitung verfügbar; das Backend läuft lokal."
-    },
-    "labels": {
-      "en": "New portfolio demo",
-      "de": "Neue Portfoliodemo"
-    }
   }
 ];
 

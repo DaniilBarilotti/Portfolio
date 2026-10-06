@@ -14,7 +14,6 @@ A bilingual English / German portfolio for frontend and IT roles. Selected proje
 | To-do App | React, TypeScript, asynchronous state | Learning app using an external task API |
 | 2048 | JavaScript arrays and game state | Learning implementation of an existing puzzle |
 | Bose Landing Page | HTML, SCSS, BEM | Training design implementation, no brand affiliation |
-| SupportDesk Lite | Python, SQLite, JSON API | New local single-user demo; backend is run locally |
 
 ## Run this website
 
@@ -28,10 +27,11 @@ Open `http://localhost:8000`. No build step or package installation is required.
 
 - `index.html`, `styles.css`, `main.js`: portfolio content, design and interactions.
 - `career/cv-de.html`: printable German CV draft.
+- `career/Daniil-Barilotti-Portfolio.html`: self-contained portfolio with collapsed project details and embedded screenshots.
+- `career/Daniil-Barilotti-Portfolio-DE.pdf`: 14-page German project portfolio with clickable contents and collapsed project bookmarks.
 - `career/project-descriptions.md`: concise DE / EN project descriptions for applications.
 - `docs/project-review.md`: source-based review and known limitations.
 - `docs/interview-preparation.md`: study guide to explain the code and project decisions.
-- `projects/supportdesk-lite/`: a separate local web app with a Python backend; see its README.
 
 The website includes language and palette switches, category-based skills, reduced-motion support and a small memory game. The project grid exposes all selected work directly.
 

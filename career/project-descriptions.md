@@ -13,8 +13,6 @@ Frontend-Beitrag zu einem Teamprojekt: Chat, Darstellung von Guardrail-Ergebniss
 **FORNO — HTML, CSS, JavaScript**  
 Responsives Restaurantkonzept auf Deutsch und Englisch mit redaktionellem Layout und zugänglichen Zutaten-Akkordeons. Fiktives Restaurant als Portfolioentwurf.
 
-**SupportDesk Lite — Python, SQLite, JavaScript**  
-Lokale IT-Ticketverwaltung mit JSON-API, SQLite-Persistenz und Browser-Dashboard. Neue Portfoliodemo für API- und Datenbankabläufe; kein produktives Ticketsystem.
 
 ## English
 
@@ -27,5 +25,3 @@ Frontend contribution to a team project: chat, guardrail verdict presentation, h
 **FORNO — HTML, CSS, JavaScript**  
 Responsive German / English restaurant concept with an editorial layout and accessible ingredient accordions. A fictional venue created for the portfolio.
 
-**SupportDesk Lite — Python, SQLite, JavaScript**  
-Local IT-ticket application with a JSON API, SQLite persistence and browser dashboard. A new portfolio demo for API and database workflows; not a production service.
