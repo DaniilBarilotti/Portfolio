@@ -7,7 +7,7 @@ This review distinguishes inspected source from runtime verification. Documentat
 | Phone Catalog | package.json, Root routes, cart slice, sorting component | Static data; storage side effects in reducers; malformed localStorage may break initialisation. Homepage refreshed; production build, TypeScript and component lint pass. Published desktop checked. |
 | PromptGuard UI | API client, chat hook, package.json | Mock queue ignores prompt content. Detector/proxy live elsewhere. Incident errors silently become an empty list. Full application build not run. |
 | To-do App | fetch client, task editing hook, package.json | External Mate API, not localStorage task persistence. Existing install scripts update tooling. Full application build not run. |
-| 2048 | Complete main.js, package.json | Pre-start keyboard access fixed; key-guard and merge regression checks pass. Touch input absent. Full application build not run. |
+| 2048 | Complete main.js, package.json | Pre-start keyboard access fixed; key-guard and merge regression checks pass. Pointer-event swipes added in four directions, with threshold/cancellation tests. Board adapts to narrow screens; physical-phone verification not performed. Full application build not run. |
 | Bose Landing Page | src/index.html and existing README | `miami-landing` repository actually contains a Bose training layout. Contact form has no submission backend. |
 | FORNO | app.js, index.html, existing README | Fictional venue; bilingual presentation rather than a booking or ordering application. |
 

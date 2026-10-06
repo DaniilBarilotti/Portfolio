@@ -132,12 +132,12 @@
       "4 × 4 Spielfeld mit zufälligen neuen Kacheln.",
       "Bewegung und Zusammenführung gleicher Werte.",
       "Punktestand und Gewinn-/Verlustzustände.",
-      "Start und Neustart über eine gemeinsame Schaltfläche."
+      "Start, Neustart und Touch-Steuerung per Wischgeste."
     ],
     "architecture": "Das Spielfeld ist ein zweidimensionales Array. Die Zeilenfunktion entfernt Nullen, verbindet gleiche Nachbarn einmal und füllt leere Stellen wieder auf. Vertikale Züge wenden dieselbe Logik auf Spalten an.",
     "decisions": "Ein Vergleich vor und nach dem Zug verhindert neue Kacheln bei wirkungslosen Bewegungen. Richtungslogik wird über Umkehrung von Zeilen oder Spalten wiederverwendet.",
-    "limits": "Tastatursteuerung; noch keine Touch-Steuerung oder gespeicherten Partien. Starter-Credits und GPL-3.0-Lizenz bleiben erhalten. Die aktuelle Korrektur ignoriert Pfeiltasten vor Spielstart und fremde Tasten.",
-    "walkthrough": "Start wählen und mit Pfeiltasten spielen. An der Zeile [2, 2, 2, 2] erklären, warum der nächste Zustand [4, 4, 0, 0] ist."
+    "limits": "Tastatur- und Touch-Steuerung; noch keine gespeicherten Partien. Wischrichtung, Mindestdistanz und Abbruch werden durch Regressionstests geprüft; kein Test auf einem physischen Smartphone. Starter-Credits und GPL-3.0-Lizenz bleiben erhalten. Die aktuelle Korrektur ignoriert Pfeiltasten vor Spielstart und fremde Tasten.",
+    "walkthrough": "Start wählen und mit Pfeiltasten oder Wischgesten spielen. An der Zeile [2, 2, 2, 2] erklären, warum der nächste Zustand [4, 4, 0, 0] ist."
   },
   {
     "name": "Bose Landing Page",
