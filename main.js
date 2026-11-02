@@ -159,7 +159,7 @@
     "name": "CineDrop",
     "tag": "React · TypeScript · Workers",
     "url": null,
-    "live": "https://cinedrop.krismey2006.chatgpt.site",
+    "live": "https://cinedrop-beta.vercel.app",
     "kind": "cinema",
     "labels": {
       "en": "Personal project · public demo",

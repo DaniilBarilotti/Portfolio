@@ -33,7 +33,7 @@ para('Frontend-Entwicklung mit einem Fundament in Cybersicherheit. Sieben ausgew
 para('Alfeld (Leine), Deutschland<br/>React · TypeScript · JavaScript · SCSS · REST · Git',450)
 para('Jedes Kapitel zeigt Oberfläche, Umfang, Architektur und zentrale Entscheidungen. Das Hochschulpraktikum bei DevBrother ist im PromptGuard-Kapitel dokumentiert.',345)
 para('Navigation: Ein Kapitel in der Übersicht auswählen oder die PDF-Lesezeichen öffnen. Die Projekt-Lesezeichen sind eingeklappt. Die separate HTML-Version bietet ein- und ausklappbare Projektblöcke.',220,'small')
-para('Stand: 6. Oktober 2026<br/>Kontakt: daniilbarilotti@gmail.com',130,'small');c.showPage()
+para('Stand: 2. November 2026<br/>Kontakt: daniilbarilotti@gmail.com',130,'small');c.showPage()
 frame();c.bookmarkPage('index');c.addOutlineEntry('Projektübersicht','index',0);title('Selected work.','Sieben Projekte / klickbare Kapitel');y=684
 for i,p in enumerate(rows):
  c.setFillColor(HexColor('#ffffff'));c.roundRect(48,y-63,499,68,8,fill=1,stroke=0);c.setFillColor(ink);c.setFont('DVSB',14);c.drawString(65,y-17,f'{i+1:02d}  {p["name"]}');c.setFont('DVS',8);c.setFillColor(muted);c.drawString(65,y-35,p['tag']);c.drawString(65,y-50,p['role']);c.linkRect(p['name'],p['kind'],(48,y-63,547,y+5),thickness=0);y-=77
