@@ -29,7 +29,7 @@ def heading(text,y):
  c.setFillColor(teal);c.setFont('DVSB',11);c.drawString(48,y,text);return y-20
 frame();c.bookmarkPage('cover');c.addOutlineEntry('Start','cover',0)
 c.setFillColor(ink);c.setFont('DVSB',37);c.drawString(48,682,'Daniil');c.drawString(48,634,'Barilotti.');c.setFillColor(teal);c.setFont('DVSB',17);c.drawString(48,589,'Projektportfolio')
-para('Frontend-Entwicklung mit einem Fundament in Cybersicherheit. Sieben ausgewählte Projekte: responsive Websites, React-Anwendungen, Filmentdeckung und eine Sicherheitsoberfläche.',548)
+para('IT- und Softwareentwicklung mit einem Fundament in Cybersicherheit. Sieben ausgewählte Projekte: responsive Websites, React-Anwendungen, Filmentdeckung und eine Sicherheitsoberfläche.',548)
 para('Alfeld (Leine), Deutschland<br/>React · TypeScript · JavaScript · SCSS · REST · Git',450)
 para('Jedes Kapitel zeigt Oberfläche, Umfang, Architektur und zentrale Entscheidungen. Das Hochschulpraktikum bei DevBrother ist im PromptGuard-Kapitel dokumentiert.',345)
 para('Navigation: Ein Kapitel in der Übersicht auswählen oder die PDF-Lesezeichen öffnen. Die Projekt-Lesezeichen sind eingeklappt. Die separate HTML-Version bietet ein- und ausklappbare Projektblöcke.',220,'small')

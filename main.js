@@ -12,10 +12,10 @@
       "nav.coursework":    "Coursework",
       "nav.languages":     "Languages",
       "nav.contacts":      "Contact",
-      "hero.tagline":      "Frontend development, with a foundation in cybersecurity.",
+      "hero.tagline":      "IT & software development, with a foundation in cybersecurity.",
       "about.eyebrow":     "01 — About",
       "about.title":       "Who I am & where I study.",
-      "about.text":        "I study cybersecurity at V. N. Karazin National University and work with React, TypeScript and responsive interfaces. My projects explore frontend state, API integration and usable security dashboards.",
+      "about.text":        "I study cybersecurity at V. N. Karazin National University and build software with React, TypeScript and Python, alongside networking and Linux fundamentals. My projects cover web interfaces, API integration and usable security dashboards.",
       "edu.role":          "Cybersecurity · 4th year",
       "edu.meta":          "Cryptography, networking, information security.",
       "skills.eyebrow":    "02 — Skills",
@@ -66,9 +66,9 @@
       "game.repeat":       "repeat it on the tiles (level",
       "contacts.eyebrow":  "08 — Contact",
       "contacts.title":    "Let\u2019s connect",
-      "contacts.lead":     "Based in Alfeld, Germany. Open to junior frontend roles, internships and IT-support opportunities.",
+      "contacts.lead":     "Based in Alfeld, Germany. Open to junior software and IT roles, internships and IT-support opportunities.",
       "contacts.email":    "Email",
-      "footer.tag":        "Cybersecurity · Frontend"
+      "footer.tag":        "Cybersecurity · Software & IT"
     },
     de: {
       "meta.title":        "Daniil Barilotti — Portfolio",
@@ -78,10 +78,10 @@
       "nav.coursework":    "Ausbildung",
       "nav.languages":     "Sprachen",
       "nav.contacts":      "Kontakt",
-      "hero.tagline":      "Frontend-Entwicklung mit einem Fundament in Cybersicherheit.",
+      "hero.tagline":      "IT- und Softwareentwicklung mit einem Fundament in Cybersicherheit.",
       "about.eyebrow":     "01 — Über mich",
       "about.title":       "Wer ich bin & wo ich studiere.",
-      "about.text":        "Ich studiere Cybersicherheit an der Nationalen W.-N.-Karasin-Universität und arbeite mit React, TypeScript und responsiven Oberflächen. Meine Projekte behandeln Frontend-Zustand, API-Anbindung und verständliche Sicherheits-Dashboards.",
+      "about.text":        "Ich studiere Cybersicherheit an der Nationalen W.-N.-Karasin-Universität und entwickle Software mit React, TypeScript und Python, dazu Grundlagen in Netzwerken und Linux. Meine Projekte behandeln Weboberflächen, API-Anbindung und verständliche Sicherheits-Dashboards.",
       "edu.role":          "Cybersicherheit · 4. Jahr",
       "edu.meta":          "Kryptografie, Netzwerke, Informationssicherheit.",
       "skills.eyebrow":    "02 — Skills",
@@ -132,9 +132,9 @@
       "game.repeat":       "wiederhole ihn auf den Kacheln (Level",
       "contacts.eyebrow":  "08 — Kontakt",
       "contacts.title":    "Lass uns vernetzen",
-      "contacts.lead":     "In Alfeld, Deutschland. Offen für Junior-Frontend-Stellen, Praktika und IT-Support.",
+      "contacts.lead":     "In Alfeld, Deutschland. Offen für Junior-Stellen in Softwareentwicklung und IT, Praktika und IT-Support.",
       "contacts.email":    "E-Mail",
-      "footer.tag":        "Cybersicherheit · Frontend"
+      "footer.tag":        "Cybersicherheit · Software & IT"
     }
   };
 

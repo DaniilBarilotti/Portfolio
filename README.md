@@ -1,6 +1,6 @@
 # Daniil Barilotti — Portfolio
 
-A bilingual English / German portfolio for frontend and IT roles. Selected projects are presented with their real scope, stack, source code and demo links.
+A bilingual English / German portfolio for software development and IT roles. Selected projects are presented with their real scope, stack, source code and demo links.
 
 [Current published site](https://daniilbarilotti.github.io/Portfolio/) · [GitHub](https://github.com/DaniilBarilotti)
 
