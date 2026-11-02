@@ -7,6 +7,9 @@ Use only the projects whose code and decisions you can explain. These are projec
 **Phone Catalog — React, TypeScript, Redux Toolkit**  
 Shop-Frontend mit Produktvarianten, URL-basierter Sortierung und Pagination sowie persistentem Warenkorb und Favoriten. Statische Produktdaten; Lernprojekt ohne Zahlungsbackend.
 
+**CineDrop — React, TypeScript, Cloudflare Workers**
+Eigenes Film-Discovery-Projekt mit 24 Themenboxen, einer Sammlung von 12.759 Filmen sowie separaten Ansichten für Serien und Anime. Die öffentliche Demo bietet Suche, Filter, animierte Zufallsauswahl und Detailseiten; der Anwendungsquellcode bleibt privat.
+
 **PromptGuard UI — React, Vite, REST-Anbindung**  
 Frontend-Beitrag zu einem Teamprojekt: Chat, Darstellung von Guardrail-Ergebnissen, markierte Textfragmente und Vorfallübersicht. Eigenständiger Demomodus mit simulierten Ergebnissen.
 
@@ -18,6 +21,9 @@ Responsives Restaurantkonzept auf Deutsch und Englisch mit redaktionellem Layout
 
 **Phone Catalog — React, TypeScript, Redux Toolkit**  
 Storefront frontend with product variants, URL-based sorting and pagination, and persistent cart and favourites. Learning project using static product data; no payment backend.
+
+**CineDrop — React, TypeScript, Cloudflare Workers**
+Personal film-discovery project with 24 themed cases, a 12,759-film collection, and dedicated series and anime views. The public demo provides search, filters, animated random selection and detail pages; application source remains private.
 
 **PromptGuard UI — React, Vite, REST integration**  
 Frontend contribution to a team project: chat, guardrail verdict presentation, highlighted fragments and incident views. Standalone demo uses simulated verdicts.

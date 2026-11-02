@@ -9,6 +9,7 @@ A bilingual English / German portfolio for frontend and IT roles. Selected proje
 | Project | Focus | Scope |
 | --- | --- | --- |
 | Phone Catalog | React, TypeScript, Redux, routing | Storefront frontend with static JSON data |
+| CineDrop | React, TypeScript, Workers | Personal film-discovery project with a public demo; application source is private |
 | PromptGuard UI | React, chat, API mapping | Frontend contribution to a team security project |
 | FORNO Pizzeria | Responsive UI, DE / EN, accessibility | Fictional restaurant design concept |
 | To-do App | React, TypeScript, asynchronous state | Learning app using an external task API |
