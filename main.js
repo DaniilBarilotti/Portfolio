@@ -67,7 +67,7 @@
       "game.repeat":       "repeat it on the tiles (level",
       "contacts.eyebrow":  "08 — Contact",
       "contacts.title":    "Let\u2019s connect",
-      "contacts.lead":     "Based in Alfeld, Germany. Open to junior software and IT roles, internships and IT-support opportunities.",
+      "contacts.lead":     "Based in Hannover, Germany. Open to junior software and IT roles, internships and IT-support opportunities.",
       "contacts.email":    "Email",
       "footer.tag":        "Cybersecurity · Software & IT"
     },
@@ -134,7 +134,7 @@
       "game.repeat":       "wiederhole ihn auf den Kacheln (Level",
       "contacts.eyebrow":  "08 — Kontakt",
       "contacts.title":    "Lass uns vernetzen",
-      "contacts.lead":     "In Alfeld, Deutschland. Offen für Junior-Stellen in Softwareentwicklung und IT, Praktika und IT-Support.",
+      "contacts.lead":     "In Hannover, Deutschland. Offen für Junior-Stellen in Softwareentwicklung und IT, Praktika und IT-Support.",
       "contacts.email":    "E-Mail",
       "footer.tag":        "Cybersicherheit · Software & IT"
     }
