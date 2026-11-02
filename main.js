@@ -199,21 +199,6 @@
     }
   },
   {
-    "name": "To-do App",
-    "tag": "React · TypeScript · REST",
-    "kind": "tasks",
-    "url": "https://github.com/DaniilBarilotti/todo-app",
-    "live": "https://daniilbarilotti.github.io/todo-app/",
-    "desc": {
-      "en": "Task management with API-backed create, edit, delete and completion flows. A learning project focused on asynchronous UI, loading states and error feedback.",
-      "de": "Aufgabenverwaltung mit API für Erstellen, Bearbeiten, Löschen und Statuswechsel. Lernprojekt mit Fokus auf asynchroner UI, Ladezuständen und Fehlermeldungen."
-    },
-    "labels": {
-      "en": "Learning project",
-      "de": "Lernprojekt"
-    }
-  },
-  {
     "name": "2048",
     "tag": "JavaScript · SCSS",
     "kind": "game",
