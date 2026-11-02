@@ -1,46 +1,29 @@
 # Daniil Barilotti — Portfolio
 
-A bilingual English / German portfolio for software development and IT roles. Selected projects are presented with their real scope, stack, source code and demo links.
+Bilingual (English / German) portfolio of a cybersecurity student with a software and IT focus.
 
-[Current published site](https://daniilbarilotti.github.io/Portfolio/) · [GitHub](https://github.com/DaniilBarilotti)
+[Live site](https://daniilbarilotti.github.io/Portfolio/) · [GitHub](https://github.com/DaniilBarilotti)
 
 ## Selected work
 
-| Project | Focus | Scope |
-| --- | --- | --- |
-| Phone Catalog | React, TypeScript, Redux, routing | Storefront frontend with static JSON data |
-| CineDrop | React, TypeScript, Workers | Personal film-discovery project with a public demo; application source is private |
-| PromptGuard UI | React, chat, API mapping | Frontend contribution to a team security project |
-| FORNO Pizzeria | Responsive UI, DE / EN, accessibility | Fictional restaurant design concept |
-| 2048 | JavaScript arrays and game state | Learning implementation of an existing puzzle |
-| Bose Landing Page | HTML, SCSS, BEM | Training design implementation, no brand affiliation |
+| Project | Focus |
+| --- | --- |
+| Phone Catalog | React, TypeScript, Redux, routing |
+| CineDrop | React, TypeScript, film discovery (public demo) |
+| PromptGuard UI | React, chat UI, API integration (team project) |
+| FORNO Pizzeria | Responsive UI, DE / EN, accessibility |
+| 2048 | JavaScript game state |
+| Bose Landing Page | HTML, SCSS, BEM (training project) |
 
-## Run this website
+## Run locally
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Open `http://localhost:8000`. No build step or package installation is required. Fonts and the avatar are external resources; the layout has font fallbacks.
+Open `http://localhost:8000`. No build step required.
 
 ## Structure
 
-- `index.html`, `styles.css`, `main.js`: portfolio content, design and interactions.
-- `career/cv-de.html`: printable German CV draft.
-- `career/Daniil-Barilotti-Portfolio.html`: self-contained portfolio with collapsed project details and embedded screenshots.
-- `career/Daniil-Barilotti-Portfolio-DE.pdf`: 14-page German project portfolio with clickable contents and collapsed project bookmarks.
-- `career/project-descriptions.md`: concise DE / EN project descriptions for applications.
-- `docs/project-review.md`: source-based review and known limitations.
-- `docs/interview-preparation.md`: study guide to explain the code and project decisions.
-
-The website includes language and palette switches, category-based skills, reduced-motion support and a small memory game. The project grid exposes all selected work directly.
-
-## Application use
-
-Confirm education dates, course certificates, internship dates and personal contribution before submitting a CV. A new demo belongs in an application after the applicant can run it, change it and explain it. Repository starter credits and licences remain intact.
-
-## CineDrop and university practice
-
-CineDrop is a seventh selected project: React, TypeScript and a Workers backend; 24 cases and a 12,759-film collection. Its demo is public; application source remains private. The source stays in its existing Sites repository.
-
-PromptGuard is documented as the frontend contribution from the DevBrother university internship, 29 June–19 July 2026. See docs/university-practice.md.
+- `index.html`, `styles.css`, `main.js`: the website.
+- `career/`: CV (HTML and PDF) and the project portfolio (HTML and PDF).
