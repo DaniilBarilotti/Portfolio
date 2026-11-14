@@ -8,6 +8,7 @@ Bilingual (English / German) portfolio of a cybersecurity student with a softwar
 
 | Project | Focus |
 | --- | --- |
+| Security Headers Scanner | React, TypeScript, serverless function, SSRF protection |
 | Phone Catalog | React, TypeScript, Redux, routing |
 | CineDrop | React, TypeScript, film discovery (public demo) |
 | PromptGuard UI | React, chat UI, API integration (team project) |

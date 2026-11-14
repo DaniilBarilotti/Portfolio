@@ -143,6 +143,21 @@
   /* ======================= Projects ======================= */
   var PROJECTS = [
   {
+    "name": "Security Headers Scanner",
+    "tag": "React · TypeScript · Security",
+    "kind": "scanner",
+    "url": "https://github.com/DaniilBarilotti/security-headers-scanner",
+    "live": "https://security-headers-scanner.vercel.app",
+    "desc": {
+      "en": "Grades the HTTP security headers a site sends and shows the header that closes each gap. The scan runs in a serverless function hardened against SSRF: private ranges, DNS rebinding and redirect hops are all checked.",
+      "de": "Bewertet die HTTP-Sicherheitsheader einer Website und zeigt zu jeder Lücke den passenden Header. Der Scan läuft in einer Serverless-Funktion mit SSRF-Schutz: private Adressbereiche, DNS-Rebinding und Weiterleitungen werden geprüft."
+    },
+    "labels": {
+      "en": "Personal project · web security",
+      "de": "Eigenes Projekt · Websicherheit"
+    }
+  },
+  {
     "name": "Phone Catalog",
     "tag": "React · TypeScript · Redux",
     "kind": "catalog",
@@ -264,7 +279,7 @@
         '<div class="project-cover" aria-hidden="true"><span class="cover-name"></span><span class="cover-symbol"></span></div><div class="project-type"></div><div class="proj-top"><h3></h3></div><span class="tag"></span><p></p>' + linksHtml;
 
       card.querySelector(".cover-name").textContent = p.name;
-      card.querySelector(".cover-symbol").textContent = ({catalog:"01 / SHOP",security:"02 / GUARD",forno:"03 / FORNO",tasks:"04 / TASKS",game:"05 / 2048",landing:"06 / BOSE",cinema:"02 / CINEMA"})[p.kind];
+      card.querySelector(".cover-symbol").textContent = ({scanner:"01 / SCAN",catalog:"02 / SHOP",cinema:"03 / CINEMA",security:"04 / GUARD",forno:"05 / FORNO",game:"06 / 2048",landing:"07 / BOSE",tasks:"08 / TASKS"})[p.kind];
       card.querySelector(".project-type").textContent = p.labels[lang];
       card.querySelector("h3").textContent = p.name;
       card.querySelector(".tag").textContent = p.tag;

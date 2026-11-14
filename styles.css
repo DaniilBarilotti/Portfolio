@@ -244,6 +244,7 @@ footer{padding:40px 20px;text-align:center;color:var(--muted);font-size:13px;fon
 .project-cover{height:174px;margin:0 -26px 22px;padding:24px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(135deg,#293959,#0b1627);border-bottom:1px solid var(--line)}
 .cover-name{font-size:26px;font-weight:800;letter-spacing:-.04em;color:#fff}
 .cover-symbol{font:12px 'Space Mono',monospace;letter-spacing:.16em;color:#ccd6ed}
+[data-kind="scanner"] .project-cover{background:linear-gradient(135deg,#2b50d8,#101a3a)}
 [data-kind="security"] .project-cover{background:linear-gradient(135deg,#194a40,#111c27)}
 [data-kind="forno"] .project-cover{background:#b92722}.project-grid [data-kind="forno"] .cover-name{font-size:38px}
 [data-kind="tasks"] .project-cover{background:linear-gradient(135deg,#524069,#171827)}
