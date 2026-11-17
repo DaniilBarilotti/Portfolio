@@ -1,0 +1,238 @@
+<!doctype html>
+<html
+  lang="en"
+  data-title-en="CineDrop — project details · Daniil Barilotti"
+  data-title-de="CineDrop — Projektdetails · Daniil Barilotti"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineDrop — project details · Daniil Barilotti</title>
+    <meta
+      name="description"
+      content="CineDrop: a film, series and anime picker with themed cases. Project details."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700;800&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="project.css?v=20261117" />
+  </head>
+  <body>
+    <main class="page">
+      <div class="topbar">
+        <a class="back" href="../#projects">
+          <span class="en">← All projects</span><span class="de">← Alle Projekte</span>
+        </a>
+        <div class="lang-switch" role="group" aria-label="Language / Sprache">
+          <button type="button" data-lang="en">EN</button>
+          <button type="button" data-lang="de">DE</button>
+        </div>
+      </div>
+
+      <span class="badge"
+        ><span class="en">Featured project</span><span class="de">Hervorgehobenes Projekt</span></span
+      >
+      <h1>CineDrop</h1>
+      <p class="lead en">
+        Can't decide what to watch? Pick a themed case, spin the reel, and CineDrop picks your next
+        film, series or anime.
+      </p>
+      <p class="lead de">
+        Keine Idee, was du schauen sollst? Eine Themenbox wählen, die Filmrolle drehen, und CineDrop
+        bestimmt den nächsten Film, die nächste Serie oder den nächsten Anime.
+      </p>
+
+      <div class="actions">
+        <a class="btn primary" href="https://cinedrop-beta.vercel.app" target="_blank" rel="noopener">
+          <span class="en">Open the live site ↗</span><span class="de">Live-Demo öffnen ↗</span>
+        </a>
+        <a
+          class="btn"
+          href="https://github.com/DaniilBarilotti/cinedrop"
+          target="_blank"
+          rel="noopener"
+        >
+          <span class="en">Project page on GitHub ↗</span
+          ><span class="de">Projektseite auf GitHub ↗</span>
+        </a>
+      </div>
+
+      <ul class="tags">
+        <li>Next.js 16</li>
+        <li>React 19</li>
+        <li>TypeScript</li>
+        <li>Tailwind CSS 4</li>
+        <li>Vercel</li>
+      </ul>
+
+      <figure>
+        <img
+          src="img/cinedrop-home.jpg"
+          width="1400"
+          height="875"
+          alt="CineDrop home page with tonight's wild card case and poster-covered cases"
+        />
+        <figcaption>
+          <span class="en">Home page · November 2026</span
+          ><span class="de">Startseite · November 2026</span>
+        </figcaption>
+      </figure>
+      <div class="gallery">
+        <figure>
+          <img
+            src="img/cinedrop-reel.jpg"
+            width="1400"
+            height="875"
+            loading="lazy"
+            alt="The cinema reel stopped on the chosen film"
+          />
+          <figcaption>
+            <span class="en">The reel lands on your pick</span
+            ><span class="de">Die Filmrolle stoppt auf dem Titel</span>
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            src="img/cinedrop-discover.jpg"
+            width="1400"
+            height="875"
+            loading="lazy"
+            alt="Discover page with search, genre filter and sorting"
+          />
+          <figcaption>
+            <span class="en">Discover: search, filter, sort</span
+            ><span class="de">Discover: Suche, Filter, Sortierung</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <h2><span class="en">What it does</span><span class="de">Funktionsumfang</span></h2>
+      <ul class="list en">
+        <li>
+          43 themed cases for movies, series, anime and animation, from genres and decades to
+          actor and director ensembles. Every case cover is a fan of real posters from that case.
+        </li>
+        <li>
+          The reel picks a title before it starts spinning, then stops exactly on it. Quick opening,
+          Skip animation, optional sound and reduced-motion support are built in.
+        </li>
+        <li>
+          Discover more than 12,800 films by title, actor or director, with genre filters and
+          sorting. New releases are added automatically every day.
+        </li>
+        <li>
+          13,000 series from TVmaze with IMDb ratings, and anime from AniList that only lists titles
+          that have actually aired.
+        </li>
+      </ul>
+      <ul class="list de">
+        <li>
+          43 Themenboxen für Filme, Serien, Anime und Animation, von Genres und Jahrzehnten bis zu
+          Schauspieler- und Regie-Ensembles. Jede Box zeigt echte Poster aus ihrem Inhalt.
+        </li>
+        <li>
+          Die Filmrolle wählt den Titel vor der Animation und stoppt genau darauf. Schnellmodus,
+          Animation überspringen, Ton und reduzierte Bewegung sind eingebaut.
+        </li>
+        <li>
+          Discover durchsucht über 12.800 Filme nach Titel, Darsteller oder Regie, mit Genrefilter
+          und Sortierung. Neuerscheinungen kommen täglich automatisch dazu.
+        </li>
+        <li>
+          13.000 Serien aus TVmaze mit IMDb-Bewertungen und Anime aus AniList, wobei nur bereits
+          ausgestrahlte Titel erscheinen.
+        </li>
+      </ul>
+
+      <h2><span class="en">How it works</span><span class="de">Architektur</span></h2>
+      <p class="en">
+        A Next.js 16 app on Vercel. Bundled JSON catalogs feed the films and the cases. Server
+        routes search the catalog, merge new releases from Stremio Cinemeta once a day, and
+        normalize TVmaze and AniList responses with bounded caching and a saved fallback when a
+        service is down.
+      </p>
+      <p class="de">
+        Eine Next.js-16-App auf Vercel. Gebündelte JSON-Kataloge versorgen Filme und Themenboxen.
+        Serverrouten durchsuchen den Katalog, ergänzen einmal täglich Neuerscheinungen aus Stremio
+        Cinemeta und normalisieren TVmaze- und AniList-Antworten mit begrenztem Cache und einer
+        gespeicherten Auswahl, falls ein Dienst ausfällt.
+      </p>
+
+      <h2><span class="en">Highlights</span><span class="de">Entscheidungen</span></h2>
+      <ul class="list en">
+        <li>
+          <strong>Data quality:</strong> an audit of all 12,759 films against Cinemeta found 93
+          posters showing a different title (TV mini-series mapped to unrelated films). A script
+          now fixes them, and a test keeps the fix in place.
+        </li>
+        <li>
+          <strong>Fair draw:</strong> the winner is chosen with the Web Crypto API before the
+          animation, independently of image hosts; the reel never shows the winner next to itself.
+        </li>
+        <li>
+          <strong>Fresh catalogs without redeploys:</strong> new films arrive daily at runtime;
+          series and cases are rebuilt by reproducible scripts.
+        </li>
+        <li>
+          <strong>Maintainable code:</strong> modular CSS on design tokens, Prettier, ESLint with
+          zero errors and regression tests for the draw and the catalog.
+        </li>
+      </ul>
+      <ul class="list de">
+        <li>
+          <strong>Datenqualität:</strong> Ein Abgleich aller 12.759 Filme mit Cinemeta fand 93 Poster,
+          die einen anderen Titel zeigten (TV-Miniserien, die falschen Filmen zugeordnet waren). Ein
+          Skript korrigiert sie jetzt, ein Test sichert die Korrektur ab.
+        </li>
+        <li>
+          <strong>Faire Auswahl:</strong> Der Titel wird vor der Animation mit der Web Crypto API
+          gewählt, unabhängig von Bildhosts; derselbe Titel steht nie direkt daneben.
+        </li>
+        <li>
+          <strong>Aktuelle Kataloge ohne neues Deployment:</strong> Neue Filme kommen täglich zur
+          Laufzeit dazu; Serien und Themenboxen bauen reproduzierbare Skripte neu auf.
+        </li>
+        <li>
+          <strong>Wartbarer Code:</strong> modulares CSS mit Design-Tokens, Prettier, ESLint ohne
+          Fehler und Regressionstests für Auswahl und Katalog.
+        </li>
+      </ul>
+
+      <h2><span class="en">Tech stack</span><span class="de">Technologien</span></h2>
+      <dl class="stack">
+        <dt>Framework</dt>
+        <dd>Next.js 16 (App Router), React 19, TypeScript</dd>
+        <dt>UI</dt>
+        <dd>Tailwind CSS 4, shadcn/ui, Inter, Lucide icons</dd>
+        <dt><span class="en">Data</span><span class="de">Daten</span></dt>
+        <dd>TMDb datasets, Stremio Cinemeta, TVmaze, AniList</dd>
+        <dt><span class="en">Quality</span><span class="de">Qualität</span></dt>
+        <dd>node:test, ESLint, Prettier</dd>
+        <dt>Hosting</dt>
+        <dd>Vercel</dd>
+      </dl>
+
+      <h2><span class="en">Scope</span><span class="de">Projektgrenzen</span></h2>
+      <p class="en">
+        A personal project with a public demo. It does not stream films, process payments or award
+        prizes. External data and image services can be unavailable; every rating shows its source
+        and snapshot date.
+      </p>
+      <p class="de">
+        Eigenes Projekt mit öffentlicher Demo. Kein Filmstreaming, keine Zahlungen, keine Gewinne.
+        Externe Daten- und Bilddienste können ausfallen; jede Bewertung zeigt Quelle und Datum.
+      </p>
+
+      <p class="note en">
+        The source code is private. I'm happy to walk through it in an interview or a call.
+      </p>
+      <p class="note de">
+        Der Quellcode ist privat. Gern zeige ich ihn in einem Gespräch oder Call.
+      </p>
+    </main>
+    <script src="project.js?v=20261117"></script>
+  </body>
+</html>

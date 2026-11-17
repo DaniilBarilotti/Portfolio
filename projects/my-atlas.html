@@ -1,0 +1,275 @@
+<!doctype html>
+<html
+  lang="en"
+  data-title-en="My Atlas — project details · Daniil Barilotti"
+  data-title-de="My Atlas — Projektdetails · Daniil Barilotti"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Atlas — project details · Daniil Barilotti</title>
+    <meta
+      name="description"
+      content="My Atlas: an interactive 3D travel globe with stats and geography games. Project details."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700;800&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="project.css?v=20261117" />
+  </head>
+  <body>
+    <main class="page">
+      <div class="topbar">
+        <a class="back" href="../#projects">
+          <span class="en">← All projects</span><span class="de">← Alle Projekte</span>
+        </a>
+        <div class="lang-switch" role="group" aria-label="Language / Sprache">
+          <button type="button" data-lang="en">EN</button>
+          <button type="button" data-lang="de">DE</button>
+        </div>
+      </div>
+
+      <span class="badge"
+        ><span class="en">Featured project</span><span class="de">Hervorgehobenes Projekt</span></span
+      >
+      <h1>My Atlas</h1>
+      <p class="lead en">
+        Spin a 3D globe, mark the countries and regions you have visited or want to see, and track
+        how much of the world you have explored.
+      </p>
+      <p class="lead de">
+        Einen 3D-Globus drehen, besuchte und geplante Länder und Regionen markieren und verfolgen,
+        wie viel der Welt man schon gesehen hat.
+      </p>
+
+      <div class="actions">
+        <a class="btn primary" href="https://myatlas-map.vercel.app" target="_blank" rel="noopener">
+          <span class="en">Open the live site ↗</span><span class="de">Live-Demo öffnen ↗</span>
+        </a>
+        <a
+          class="btn"
+          href="https://github.com/DaniilBarilotti/my-atlas"
+          target="_blank"
+          rel="noopener"
+        >
+          <span class="en">Project page on GitHub ↗</span
+          ><span class="de">Projektseite auf GitHub ↗</span>
+        </a>
+      </div>
+
+      <ul class="tags">
+        <li>JavaScript</li>
+        <li>three.js / globe.gl</li>
+        <li>WebGL</li>
+        <li>Supabase</li>
+        <li>Postgres</li>
+        <li>Vercel</li>
+      </ul>
+
+      <figure>
+        <img
+          src="img/atlas-globe.jpg"
+          width="1400"
+          height="875"
+          alt="The globe with visited countries marked in green"
+        />
+        <figcaption>
+          <span class="en">The globe with visited countries · November 2026</span
+          ><span class="de">Der Globus mit besuchten Ländern · November 2026</span>
+        </figcaption>
+      </figure>
+      <div class="gallery">
+        <figure>
+          <img
+            src="img/atlas-country.jpg"
+            width="1400"
+            height="875"
+            loading="lazy"
+            alt="Italy split into provinces with Florence selected"
+          />
+          <figcaption>
+            <span class="en">A country splits into its regions</span
+            ><span class="de">Ein Land zerfällt in seine Regionen</span>
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            src="img/atlas-game.jpg"
+            width="1400"
+            height="875"
+            loading="lazy"
+            alt="A round of the Name it geography game"
+          />
+          <figcaption>
+            <span class="en">“Name it” mini-game</span
+            ><span class="de">Minispiel „Land benennen“</span>
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            src="img/atlas-stats.jpg"
+            width="1400"
+            height="875"
+            loading="lazy"
+            alt="Travel statistics by continent"
+          />
+          <figcaption>
+            <span class="en">Travel stats by continent</span
+            ><span class="de">Reisestatistik nach Kontinent</span>
+          </figcaption>
+        </figure>
+        <figure class="phone">
+          <img
+            src="img/atlas-phone.jpg"
+            width="780"
+            height="1688"
+            loading="lazy"
+            alt="Phone layout with Spain open in a bottom sheet"
+          />
+          <figcaption>
+            <span class="en">Phone layout</span><span class="de">Ansicht auf dem Smartphone</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <h2><span class="en">What it does</span><span class="de">Funktionsumfang</span></h2>
+      <ul class="list en">
+        <li>
+          Rotate and zoom the globe, click a country to fly in and see its regions; tiny states get
+          tappable pins.
+        </li>
+        <li>“Been here” and “want to go” marks for 242 countries and territories and 4,559 regions.</li>
+        <li>
+          Facts on hover: hand-written notes for 136 countries, region summaries and famous people
+          live from Wikipedia and Wikidata.
+        </li>
+        <li>
+          Travel stats (share of countries, land area and population visited, progress by
+          continent) and three geography mini-games.
+        </li>
+        <li>
+          Sign in with Google or email to sync the map across devices; share links and backup files
+          work without an account.
+        </li>
+      </ul>
+      <ul class="list de">
+        <li>
+          Globus drehen und zoomen, ein Land anklicken, hineinfliegen und seine Regionen sehen;
+          Kleinststaaten bekommen antippbare Markierungen.
+        </li>
+        <li>Markierungen „besucht“ und „geplant“ für 242 Länder und Gebiete und 4.559 Regionen.</li>
+        <li>
+          Fakten beim Überfahren: eigene Texte zu 136 Ländern, Regionen und bekannte Personen live
+          aus Wikipedia und Wikidata.
+        </li>
+        <li>
+          Reisestatistik (Anteil der Länder, Fläche und Bevölkerung, Fortschritt pro Kontinent)
+          und drei Geografie-Minispiele.
+        </li>
+        <li>
+          Anmeldung mit Google oder E-Mail synchronisiert die Karte zwischen Geräten; Teilen per
+          Link und Sicherungsdatei funktioniert auch ohne Konto.
+        </li>
+      </ul>
+
+      <h2><span class="en">How it works</span><span class="de">Architektur</span></h2>
+      <p class="en">
+        A static site in vanilla JavaScript: the browser renders the globe with globe.gl on
+        three.js, and Vercel only serves files. Borders come from Natural Earth, simplified with
+        mapshaper; regions load only for the country you open. Supabase handles sign-in and
+        storage: each map is one JSON row in Postgres, and Row Level Security lets users read and
+        write only their own row, so the public key in the page is safe.
+      </p>
+      <p class="de">
+        Eine statische Website mit Vanilla JavaScript: Der Browser rendert den Globus mit globe.gl
+        auf three.js, Vercel liefert nur Dateien aus. Die Grenzen stammen aus Natural Earth,
+        vereinfacht mit mapshaper; Regionen werden erst beim Öffnen eines Landes geladen. Supabase
+        übernimmt Anmeldung und Speicherung: Jede Karte ist eine JSON-Zeile in Postgres, und Row
+        Level Security erlaubt nur den Zugriff auf die eigene Zeile, sodass der öffentliche
+        Schlüssel in der Seite sicher ist.
+      </p>
+
+      <h2><span class="en">Highlights</span><span class="de">Entscheidungen</span></h2>
+      <ul class="list en">
+        <li>
+          <strong>Performance:</strong> rendering cut from about 5,500 draw calls and 90 ms per frame
+          to about 870 draw calls and 5 ms, by fixing polygon winding, dropping micro-islands and
+          skipping hidden faces.
+        </li>
+        <li>
+          <strong>Touch:</strong> a custom tap hit test (screen point → latitude/longitude → point in
+          polygon) makes selection reliable on phones.
+        </li>
+        <li>
+          <strong>Forgiving game:</strong> answers tolerate typos (Levenshtein distance), with four
+          same-continent choices on the last try.
+        </li>
+        <li>
+          <strong>Sync:</strong> changes are saved a moment after the last edit; on first sign-in the
+          local and cloud maps are merged.
+        </li>
+      </ul>
+      <ul class="list de">
+        <li>
+          <strong>Performance:</strong> Rendering von etwa 5.500 Draw Calls und 90 ms pro Frame auf
+          etwa 870 Draw Calls und 5 ms gesenkt: Polygonorientierung korrigiert, Kleinstinseln
+          entfernt, verdeckte Flächen ausgelassen.
+        </li>
+        <li>
+          <strong>Touch:</strong> Ein eigener Treffertest (Bildschirmpunkt → Koordinaten → Punkt im
+          Polygon) macht die Auswahl auf Smartphones zuverlässig.
+        </li>
+        <li>
+          <strong>Fehlertolerantes Spiel:</strong> Antworten dürfen Tippfehler enthalten
+          (Levenshtein-Distanz); beim letzten Versuch gibt es vier Länder desselben Kontinents zur
+          Auswahl.
+        </li>
+        <li>
+          <strong>Synchronisierung:</strong> Änderungen werden kurz nach der letzten Bearbeitung
+          gespeichert; bei der ersten Anmeldung werden lokale und Cloud-Karte zusammengeführt.
+        </li>
+      </ul>
+
+      <h2><span class="en">Tech stack</span><span class="de">Technologien</span></h2>
+      <dl class="stack">
+        <dt>Frontend</dt>
+        <dd>
+          <span class="en">Vanilla JavaScript, HTML, CSS — no framework</span
+          ><span class="de">Vanilla JavaScript, HTML, CSS — ohne Framework</span>
+        </dd>
+        <dt><span class="en">3D globe</span><span class="de">3D-Globus</span></dt>
+        <dd>globe.gl, three.js (WebGL)</dd>
+        <dt><span class="en">Map data</span><span class="de">Kartendaten</span></dt>
+        <dd>Natural Earth, mapshaper</dd>
+        <dt><span class="en">Facts</span><span class="de">Fakten</span></dt>
+        <dd>Wikipedia REST API, Wikidata SPARQL</dd>
+        <dt><span class="en">Accounts</span><span class="de">Konten</span></dt>
+        <dd>Supabase Auth, Postgres with Row Level Security</dd>
+        <dt>Hosting</dt>
+        <dd>Vercel</dd>
+      </dl>
+
+      <h2><span class="en">Scope</span><span class="de">Projektgrenzen</span></h2>
+      <p class="en">
+        A personal project with a public demo. Region descriptions come live from Wikipedia and can
+        be unavailable. Borders follow Natural Earth and are not a statement on disputed territories.
+      </p>
+      <p class="de">
+        Eigenes Projekt mit öffentlicher Demo. Regionsbeschreibungen kommen live aus Wikipedia und
+        können ausfallen. Die Grenzen folgen Natural Earth und sind keine Aussage zu umstrittenen
+        Gebieten.
+      </p>
+
+      <p class="note en">
+        The source code is private. I'm happy to walk through it in an interview or a call.
+      </p>
+      <p class="note de">
+        Der Quellcode ist privat. Gern zeige ich ihn in einem Gespräch oder Call.
+      </p>
+    </main>
+    <script src="project.js?v=20261117"></script>
+  </body>
+</html>

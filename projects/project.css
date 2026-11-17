@@ -1,0 +1,252 @@
+/* Project description pages (projects/*.html). Shares the colors and fonts of the main site. */
+
+:root {
+  --ink: #07080c;
+  --surface: #0e1018;
+  --surface-2: #161924;
+  --line: rgba(255, 255, 255, 0.08);
+  --text: #f4f5f7;
+  --muted: #9398a6;
+  --accent-1: #5b8cff;
+  --accent-2: #b06bff;
+  --grad: linear-gradient(120deg, var(--accent-1), var(--accent-2));
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--text);
+  font: 300 16px/1.7 "Manrope", system-ui, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-1);
+  outline-offset: 3px;
+}
+
+.page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 28px 24px 72px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.back {
+  color: var(--muted);
+  font: 13px "Space Mono", monospace;
+  text-decoration: none;
+}
+
+.back:hover {
+  color: var(--text);
+}
+
+.lang-switch {
+  display: flex;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.lang-switch button {
+  padding: 6px 14px;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  font: 700 12px "Space Mono", monospace;
+  cursor: pointer;
+}
+
+.lang-switch button[aria-pressed="true"] {
+  background: var(--grad);
+  color: #fff;
+}
+
+.badge {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 5px 12px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background:
+    linear-gradient(var(--ink), var(--ink)) padding-box,
+    var(--grad) border-box;
+  font: 11px "Space Mono", monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: clamp(38px, 6vw, 60px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.lead {
+  max-width: 720px;
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: 19px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font: 13px "Space Mono", monospace;
+  text-decoration: none;
+}
+
+.btn.primary {
+  border-color: transparent;
+  background: var(--grad);
+  color: #fff;
+}
+
+.btn:hover {
+  border-color: var(--accent-1);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.tags li {
+  padding: 4px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font: 12px "Space Mono", monospace;
+}
+
+figure {
+  margin: 0 0 16px;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font: 12px "Space Mono", monospace;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.gallery .phone img {
+  max-height: 520px;
+  width: auto;
+  margin: 0 auto;
+}
+
+h2 {
+  margin: 48px 0 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+ul.list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+ul.list li {
+  margin-bottom: 8px;
+}
+
+ul.list li::marker {
+  color: var(--accent-1);
+}
+
+.stack {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 10px 24px;
+  margin: 0;
+}
+
+.stack dt {
+  color: var(--muted);
+  font: 13px "Space Mono", monospace;
+}
+
+.stack dd {
+  margin: 0;
+}
+
+.note {
+  margin-top: 48px;
+  padding: 18px 22px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface);
+  color: var(--muted);
+}
+
+/* Only the chosen language is shown. */
+[lang="de"] .en,
+[lang="en"] .de {
+  display: none !important;
+}
+
+@media (max-width: 680px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .stack {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .stack dd {
+    margin-bottom: 12px;
+  }
+}

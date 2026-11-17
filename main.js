@@ -30,6 +30,8 @@
       "proj.view":         "Repo →",
       "proj.live":         "Live →",
       "proj.swipe":        "Source code, scope and demos — in one place.",
+      "proj.details":      "Details →",
+      "proj.featured":     "Featured",
       "course.eyebrow":    "04 — Education & Coursework",
       "course.title":      "Academic & professional training.",
       "course.intro":      "University coursework and completed courses.",
@@ -97,6 +99,8 @@
       "proj.view":         "Repo →",
       "proj.live":         "Live →",
       "proj.swipe":        "Quellcode, Projektumfang und Demos an einem Ort.",
+      "proj.details":      "Details →",
+      "proj.featured":     "Hervorgehoben",
       "course.eyebrow":    "04 — Ausbildung & Kurse",
       "course.title":      "Akademische & berufliche Ausbildung.",
       "course.intro":      "Universitätskurse und abgeschlossene Weiterbildungen.",
@@ -159,6 +163,8 @@
   },
   {
     "name": "My Atlas",
+    "featured": true,
+    "details": "projects/my-atlas.html",
     "tag": "JavaScript · three.js · Supabase",
     "url": null,
     "live": "https://myatlas-map.vercel.app",
@@ -189,6 +195,8 @@
   },
   {
     "name": "CineDrop",
+    "featured": true,
+    "details": "projects/cinedrop.html",
     "tag": "Next.js · React · TypeScript",
     "url": null,
     "live": "https://cinedrop-beta.vercel.app",
@@ -280,7 +288,7 @@
     track.innerHTML = "";
     PROJECTS.forEach(function (p) {
       var card = document.createElement("div");
-      card.className = "proj-card";
+      card.className = "proj-card" + (p.featured ? " proj-card--featured" : "");
       card.dataset.kind = p.kind;
 
       var linksHtml = '<div class="proj-links">';
@@ -288,10 +296,14 @@
         linksHtml += '<a class="proj-link" href="' + p.live + '" target="_blank" rel="noopener"></a>';
       }
       if (p.url) linksHtml += '<a class="proj-link repo" href="' + p.url + '" target="_blank" rel="noopener"></a>';
+      // Featured projects keep their source private, so they get a description page instead.
+      if (p.details) linksHtml += '<a class="proj-link details" href="' + p.details + '"></a>';
       linksHtml += '</div>';
 
       card.innerHTML =
-        '<div class="project-cover" aria-hidden="true"><span class="cover-name"></span><span class="cover-symbol"></span></div><div class="project-type"></div><div class="proj-top"><h3></h3></div><span class="tag"></span><p></p>' + linksHtml;
+        '<div class="project-cover" aria-hidden="true"><span class="cover-name"></span><span class="cover-symbol"></span></div>' +
+        (p.featured ? '<span class="featured-badge"></span>' : '') +
+        '<div class="project-type"></div><div class="proj-top"><h3></h3></div><span class="tag"></span><p></p>' + linksHtml;
 
       card.querySelector(".cover-name").textContent = p.name;
       card.querySelector(".cover-symbol").textContent = ({scanner:"01 / SCAN",atlas:"02 / ATLAS",catalog:"03 / SHOP",cinema:"04 / CINEMA",security:"05 / GUARD",forno:"06 / FORNO",game:"07 / 2048",landing:"08 / BOSE",tasks:"09 / TASKS"})[p.kind];
@@ -300,7 +312,14 @@
       card.querySelector(".tag").textContent = p.tag;
       card.querySelector("p").textContent = p.desc[lang] || p.desc.en;
 
-      var links = card.querySelectorAll(".proj-link");
+      if (p.featured) card.querySelector(".featured-badge").textContent = t("proj.featured");
+      var details = card.querySelector(".proj-link.details");
+      if (details) {
+        details.textContent = t("proj.details");
+        details.href = p.details + "?lang=" + lang;
+      }
+
+      var links = card.querySelectorAll(".proj-link:not(.details)");
       if (p.live) {
         links[0].textContent = t("proj.live");
         if (p.url) links[1].textContent = t("proj.view");

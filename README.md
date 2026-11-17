@@ -29,3 +29,5 @@ Open `http://localhost:8000`. No build step required.
 
 - `index.html`, `styles.css`, `main.js`: the website.
 - `career/`: CV (HTML and PDF) and the project portfolio (HTML and PDF).
+- `projects/`: description pages for the featured projects (CineDrop, My Atlas), whose source
+  code is private. English and German, sharing the language setting with the main site.
