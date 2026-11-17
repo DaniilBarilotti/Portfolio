@@ -158,6 +158,21 @@
     }
   },
   {
+    "name": "My Atlas",
+    "tag": "JavaScript · three.js · Supabase",
+    "url": null,
+    "live": "https://myatlas-map.vercel.app",
+    "kind": "atlas",
+    "labels": {
+      "en": "Personal project · public demo",
+      "de": "Eigenes Projekt · öffentliche Demo"
+    },
+    "desc": {
+      "en": "An interactive 3D globe for marking visited countries and regions, with travel stats, Wikipedia facts and geography mini-games. Accounts sync through Supabase with row-level security. Public demo; source code stays private.",
+      "de": "Interaktiver 3D-Globus zum Markieren besuchter Länder und Regionen, mit Reisestatistik, Wikipedia-Fakten und Geografie-Minispielen. Konten synchronisieren über Supabase mit Row Level Security. Öffentliche Demo; Quellcode privat."
+    }
+  },
+  {
     "name": "Phone Catalog",
     "tag": "React · TypeScript · Redux",
     "kind": "catalog",
@@ -174,7 +189,7 @@
   },
   {
     "name": "CineDrop",
-    "tag": "React · TypeScript · Workers",
+    "tag": "Next.js · React · TypeScript",
     "url": null,
     "live": "https://cinedrop-beta.vercel.app",
     "kind": "cinema",
@@ -183,8 +198,8 @@
       "de": "Eigenes Projekt · öffentliche Demo"
     },
     "desc": {
-      "en": "Film discovery with 24 themed cases, a 12,759-film catalog, animated selection and series/anime integrations. Public demo; application source remains private.",
-      "de": "Filmentdeckung mit 24 Themenboxen, 12.759 Filmen, animierter Auswahl und Serien-/Anime-Anbindung. Öffentliche Demo; der Anwendungsquellcode bleibt privat."
+      "en": "Pick a themed case and a reel chooses your next film, series or anime. 43 cases, 12,800+ films with new releases added daily, 13,000 series with IMDb ratings. Public demo; source code stays private.",
+      "de": "Eine Themenbox wählen, und eine Filmrolle bestimmt den nächsten Film, die nächste Serie oder den nächsten Anime. 43 Themenboxen, über 12.800 Filme mit täglich ergänzten Neuerscheinungen, 13.000 Serien mit IMDb-Bewertungen. Öffentliche Demo; Quellcode privat."
     }
   },
   {
@@ -279,7 +294,7 @@
         '<div class="project-cover" aria-hidden="true"><span class="cover-name"></span><span class="cover-symbol"></span></div><div class="project-type"></div><div class="proj-top"><h3></h3></div><span class="tag"></span><p></p>' + linksHtml;
 
       card.querySelector(".cover-name").textContent = p.name;
-      card.querySelector(".cover-symbol").textContent = ({scanner:"01 / SCAN",catalog:"02 / SHOP",cinema:"03 / CINEMA",security:"04 / GUARD",forno:"05 / FORNO",game:"06 / 2048",landing:"07 / BOSE",tasks:"08 / TASKS"})[p.kind];
+      card.querySelector(".cover-symbol").textContent = ({scanner:"01 / SCAN",atlas:"02 / ATLAS",catalog:"03 / SHOP",cinema:"04 / CINEMA",security:"05 / GUARD",forno:"06 / FORNO",game:"07 / 2048",landing:"08 / BOSE",tasks:"09 / TASKS"})[p.kind];
       card.querySelector(".project-type").textContent = p.labels[lang];
       card.querySelector("h3").textContent = p.name;
       card.querySelector(".tag").textContent = p.tag;

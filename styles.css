@@ -246,6 +246,8 @@ footer{padding:40px 20px;text-align:center;color:var(--muted);font-size:13px;fon
 .cover-symbol{font:12px 'Space Mono',monospace;letter-spacing:.16em;color:#ccd6ed}
 [data-kind="scanner"] .project-cover{background:linear-gradient(135deg,#2b50d8,#101a3a)}
 [data-kind="security"] .project-cover{background:linear-gradient(135deg,#194a40,#111c27)}
+[data-kind="atlas"] .project-cover{background:linear-gradient(135deg,#1f7a5c,#0c1f33)}
+[data-kind="cinema"] .project-cover{background:linear-gradient(135deg,#8a6420,#141312)}
 [data-kind="forno"] .project-cover{background:#b92722}.project-grid [data-kind="forno"] .cover-name{font-size:38px}
 [data-kind="tasks"] .project-cover{background:linear-gradient(135deg,#524069,#171827)}
 [data-kind="game"] .project-cover{background:#725031}

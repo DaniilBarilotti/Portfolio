@@ -9,8 +9,9 @@ Bilingual (English / German) portfolio of a cybersecurity student with a softwar
 | Project | Focus |
 | --- | --- |
 | Security Headers Scanner | React, TypeScript, serverless function, SSRF protection |
+| My Atlas | 3D globe (three.js), Supabase auth and Postgres, Wikipedia data (public demo) |
 | Phone Catalog | React, TypeScript, Redux, routing |
-| CineDrop | React, TypeScript, film discovery (public demo) |
+| CineDrop | Next.js, React, TypeScript, film discovery with daily catalog updates (public demo) |
 | PromptGuard UI | React, chat UI, API integration (team project) |
 | FORNO Pizzeria | Responsive UI, DE / EN, accessibility |
 | 2048 | JavaScript game state |
